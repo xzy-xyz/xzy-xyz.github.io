@@ -32,9 +32,24 @@ I have not changed any style of this theme, at least for now.
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
     onload="renderMathInElement(document.body);"></script>
 ```
-Remeber you just could $$ but $ could not work.
 
-For example, $$\int_{-\infty}^\infty e^{-x^2} dx = \sqrt{\pi}$$
+Remeber you only could use
+
+```tex
+$$
+```
+
+while
+
+```tex
+$
+```
+
+will not work. For example,
+
+```tex
+$$\int_{-\infty}^\infty e^{-x^2} dx = \sqrt{\pi}$$
+```
 ## license
 
 [MIT License](https://opensource.org/licenses/MIT)
