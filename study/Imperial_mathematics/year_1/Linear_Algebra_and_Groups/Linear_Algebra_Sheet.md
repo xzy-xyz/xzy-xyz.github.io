@@ -578,6 +578,7 @@ $$
 A matrix $$P \in M_{n}(\mathbb{R})$$ is an orthogonal matrix iff the columns of $$P$$ form an orthonormal set in $$\mathbb{R}^{n}$$.
 
 ### Theorem (Gram - Schmidt Process)
+
  Let $$v_{1}, \ldots, v_{r}$$ be linearly independent vectors in $$\mathbb{R}^{n}$$. Define inductively vectors $$w_{1}, \ldots, w_{r}$$ as follows $$($$ for $$i \leq r)$$ :
 
 $$
@@ -598,11 +599,11 @@ Then:
 
 (iii) For $$i \leq r$$ we have $$\operatorname{Span}\left(v_{1}, \ldots, v_{i}\right)=\operatorname{Span}\left(w_{1}, \ldots, w_{i}\right)=\operatorname{Span}\left(u_{1}, \ldots, u_{i}\right)$$.
 
-## Theorem (Spectral Theorem)
+### Theorem (Spectral Theorem)
 
 If a matrix $$A \in M_{n}(\mathbb{R})$$ is symmetric (that is, $$A=A^{T}$$), then it is diagonalisable over $$\mathbb{R}$$ by two orthogonal matrix, which consists of its eigenvectors . Moreover, there is an orthogonal basis of $$\mathbb{R}^{n}$$ consisting of eigenvectors of $$A$$.
 
-## Theorem
+### Theorem
 
 If $$A \in M_{n}(\mathbb{R})$$ is symmetric and $$u, v \in \mathbb{R}^{n}$$, then
 
