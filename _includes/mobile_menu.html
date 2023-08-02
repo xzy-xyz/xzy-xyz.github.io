@@ -5,11 +5,17 @@
     <li class="nav_item">
       <a href="{{ site.baseurl }}/aboutme.html">About me</a>
     </li>
-
     {% endif %}
+
+    {% assign sorted_additional_pages = site.additional_pages | sort: 'order' %}
+    {% for page in sorted_additional_pages %}
+    <li class="nav_item">
+      <a href="{{ page.url }}" id="aaa">{{ page.title }}</a>
+    </li>
+    {% endfor %}
+
     {% for category in site.categories %}
     {% capture cat_name %}{{ category | first }}{% endcapture %}
-
     <li class="nav_item">
       <a href="{{ site.baseurl }}/categories/{{ cat_name }}" id="aa">{{ cat_name }} ({{ category | last | size }})</a>
     </li>
