@@ -329,7 +329,7 @@ $$
 \end{aligned}
 $$
 
-Now by proposition 4.2.5 $$v-\lambda_{1} v_{1}+\ldots \lambda_{r} v_{r} \in \operatorname{ker} T$$ so $$v-\lambda_{1} v_{1}+\ldots \lambda_{r} v_{r}=\mu_{1} u_{1}+\ldots+\mu_{s} u_{s}$$. Thus
+Now by proposition $$v-\lambda_{1} v_{1}+\ldots \lambda_{r} v_{r} \in \operatorname{ker} T$$ so $$v-\lambda_{1} v_{1}+\ldots \lambda_{r} v_{r}=\mu_{1} u_{1}+\ldots+\mu_{s} u_{s}$$. Thus
 
 $$
 v=\mu_{1} u_{1}+\ldots+\mu_{s} u_{s}+\lambda_{1} v_{1}+\ldots \lambda_{r} v_{r} \in \operatorname{span}(B)
@@ -366,15 +366,15 @@ Now the $$\operatorname{dim}(\operatorname{Im}(A))=\operatorname{rank}(A)$$ thus
 Let $$A$$ be an $$m \times n$$ matrix with entries in $$F$$ and let $$b \in F^{m}$$. Then the following statements are equivalent:
 
 - $$
-\rank(A) = \rank(A|b) =n \longrightarrow  \text{ the system } Ax=b \text{ has a unique solution }
+\operatorname{rank}(A) = \operatorname{rank}(A|b) =n \rightarrow  \text{ the system } Ax=b \text{ has a unique solution }
 $$
 
 - $$
-\rank(A) = \rank(A|b) < n \longrightarrow \text{ the system }Ax=b \text{ has infinitely many solutions }
+\operatorname{rank}(A) = \operatorname{rank}(A|b) < n \rightarrow \text{ the system }Ax=b \text{ has infinitely many solutions }
 $$
 
 - $$
-\rank(A) < \rank (A|b) \longrightarrow \text{ the system }Ax=b \text{ has no solutions }
+\operatorname{rank}(A) < \operatorname{rank} (A|b) \rightarrow \text{ the system }Ax=b \text{ has no solutions }
 $$
 
 ### Basis change matrix
