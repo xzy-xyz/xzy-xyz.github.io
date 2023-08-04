@@ -22,7 +22,7 @@ Here is a glimpse of me is in a self-indentified portrait, crafted by some anony
 </div>
 <center style="font-size:14px;color:#C0C0C0;text-decoration:underline">My self-indentified portrait</center>
 
-My personal resume for career is [here](/aboume/CV.pdf)  and my gitHub is [here](https://github.com/EinHungerkuenstler).eAlternatively, you are welcome to connect with me on [Linkedln](https://www.linkedin.com/in/hongyuwang123456/).
+My personal resume for career is [here](/aboume/CV.pdf)  and my gitHub is [here](https://github.com/EinHungerkuenstler). Alternatively, you are welcome to connect with me on [Linkedln](https://www.linkedin.com/in/hongyuwang123456/).
 
 ## Academic Interests
 
