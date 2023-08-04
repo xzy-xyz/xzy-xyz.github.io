@@ -22,6 +22,8 @@ Here is a glimpse of me is in a self-indentified portrait, crafted by some anony
 </div>
 <center style="font-size:14px;color:#C0C0C0;text-decoration:underline">My self-indentified portrait</center>
 
+My personal resume for career is [here](/aboume/CV.pdf)  and my gitHub is [here](https://github.com/EinHungerkuenstler).eAlternatively, you are welcome to connect with me on [Linkedln](https://www.linkedin.com/in/hongyuwang123456/).
+
 ## Academic Interests
 
 My academic interest lies at the crossroads of theoretical physics and geometry, particularly in areas like differential geometry and geometrical analysis. (A little tidbit: during my first year at Imperial, I worked on an [individual project program](/study/Imperial_mathematics/year_1/Individual_Research_Project/Individual_Research_Project_main) and took part in a [UROP](/study/Imperial_mathematics/year_1/UROP/UROP_main), both connected to these subjects.) 
@@ -50,5 +52,3 @@ By the way, the name of this site  is inspired by Kafka's well-known story *A Hu
 
 To reach me, you can send an e-mail to <annabellee123456@outlook.com>
 For academic matters, I can be reached at <hongyu.wang22@imperial.ac.uk>
-
-My personal resume for career is [here](/aboume/CV.pdf). Alternatively, you are welcome to connect with me on [Linkedln](https://www.linkedin.com/in/hongyuwang123456/).
