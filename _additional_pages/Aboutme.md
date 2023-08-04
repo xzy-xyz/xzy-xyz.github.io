@@ -29,6 +29,15 @@ Literature also has its hold on me, especially Russian literature (from 1924). A
 
 By the way, the name of this site  is inspired by Kafka's well-known story *A Hunger artist*. If you're curious, you can read it in [English](/literature/stories/Franz_Kafka/A_Hunger_Artist), [Chinese](/literature/stories/Franz_Kafka/饥饿艺术家) or [Original German](/literature/stories/Franz_Kafka/Ein_Hungerkuenstler).
 
+
+Here is a glimpse of me is in a self-indentified portrait, crafted by some anonymous soul painter :
+
+<div  align="center"> 
+<img src="/assets/img/self_portrait.JPG?height=288&width=420&top_left_y=596&top_left_x=1357" style="zoom:75%">
+</div>
+<center style="font-size:14px;color:#C0C0C0;text-decoration:underline">My self-indentified portrait</center>
+
+
 To reach me, you can send a letter to <annabellee123456@outlook.com>
 For academic matters, I can be reached at <hongyu.wang22@imperial.ac.uk>
 
