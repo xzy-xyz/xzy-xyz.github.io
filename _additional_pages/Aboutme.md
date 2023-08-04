@@ -29,7 +29,7 @@ Literature also has its hold on me, especially Russian literature (from 1924). A
 
 By the way, the name of this site  is inspired by Kafka's well-known story *A Hunger artist*. If you're curious, you can read it in [English](/literature/stories/Franz_Kafka/A_Hunger_Artist), [Chinese](/literature/stories/Franz_Kafka/饥饿艺术家) or [Original German](/literature/stories/Franz_Kafka/Ein_Hungerkuenstler).
 
-To reach me, you can send a letter to [Mr. Crow's mail box](<annabellee123456@outlook.com>).
-For academic matters, I can be reached at [WHY's mail box](<hongyu.wang22@imperial.ac.uk>).
+To reach me, you can send a letter to <annabellee123456@outlook.com>
+For academic matters, I can be reached at <hongyu.wang22@imperial.ac.uk>
 
 My personal resume for career is [here](/aboume/CV.pdf). Alternatively, you are welcome to connect with me on [Linkedln](https://www.linkedin.com/in/hongyuwang123456/).
