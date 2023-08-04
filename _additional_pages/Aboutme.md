@@ -38,7 +38,7 @@ Here is a glimpse of me is in a self-indentified portrait, crafted by some anony
 <center style="font-size:14px;color:#C0C0C0;text-decoration:underline">My self-indentified portrait</center>
 
 
-To reach me, you can send a letter to <annabellee123456@outlook.com>
+To reach me, you can send an e-mail to <annabellee123456@outlook.com>
 For academic matters, I can be reached at <hongyu.wang22@imperial.ac.uk>
 
 My personal resume for career is [here](/aboume/CV.pdf). Alternatively, you are welcome to connect with me on [Linkedln](https://www.linkedin.com/in/hongyuwang123456/).
