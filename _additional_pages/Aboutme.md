@@ -5,6 +5,7 @@ order: 1
 ---
 
 ## Contents
+- [Contents](#contents)
 - [Introduction](#introduction)
 - [Academic Interests](#academic-interests)
 - [Career and Entrepreneurship](#career-and-entrepreneurship)
@@ -48,8 +49,7 @@ Literature also has its hold on me, especially Russian literature (from 1924). A
 
 By the way, the name of this site  is inspired by Kafka's well-known story *A Hunger artist*. If you're curious, you can read it in [English](/literature/stories/Franz_Kafka/A_Hunger_Artist), [Chinese](/literature/stories/Franz_Kafka/饥饿艺术家) or [Original German](/literature/stories/Franz_Kafka/Ein_Hungerkuenstler).
 
-*"Muss es sein? Es muss sein!"* under my name comes from the fourth movement of Beethoven's String Quartet No. 16 in F major, Op. 135. It is the last string quartet he wrote. The phase means "Must it be? It must be!". For full details, check out [here](https://en.wikipedia.org/wiki/String_Quartet_No._16_(Beethoven)).
-
+The phrase "*Muss es sein? Es muss sein!*" that you see beneath my name comes from a piece of music composed by Beethoven. It's part of a musical work called String Quartet No. 16 in F major, Op. 135. This particular phrase means "*Must it be? It must be!*". If you are intereted, you can listen to it [here](https://www.bilibili.com/video/BV1Zx411Z7t6/?spm_id_from=333.788.recommend_more_video.-1&vd_source=fe2d68b49d744ceffb09c45be39b9f4a).
 ## Contact
 
 
