@@ -5,14 +5,12 @@ order: 1
 ---
 
 ## Contents
-- [Contents](#contents)
-- [Introduction](#introduction)
+- [Introduction and Contact](#introduction-and-contact)
 - [Academic Interests](#academic-interests)
 - [Career and Entrepreneurship](#career-and-entrepreneurship)
 - [Interests](#interests)
-- [Contact](#contact)
 
-## Introduction
+## Introduction and Contact
 
 Hello, welcome to my personal page. What kind of a coincidence that destiny has steered you here! My name is WHY, a mathematics student at [Imperial College London](https://www.imperial.ac.uk/mathematics/). 
 
@@ -24,6 +22,10 @@ Here is a glimpse of me is in a self-indentified portrait, crafted by some anony
 <center style="font-size:14px;color:#C0C0C0;text-decoration:underline">My self-indentified portrait</center>
 
 My personal resume for career is [here](/aboume/CV.pdf)  and my gitHub is [here](https://github.com/EinHungerkuenstler). Alternatively, you are welcome to connect with me on [Linkedln](https://www.linkedin.com/in/hongyuwang123456/).
+
+To reach me, you can send an e-mail to <annabellee123456@outlook.com>.
+
+For academic matters, I can be reached at <hongyu.wang22@imperial.ac.uk>.
 
 ## Academic Interests
 
@@ -50,9 +52,3 @@ Literature also has its hold on me, especially Russian literature (from 1924). A
 By the way, the name of this site  is inspired by Kafka's well-known story *A Hunger artist*. If you're curious, you can read it in [English](/literature/stories/Franz_Kafka/A_Hunger_Artist), [Chinese](/literature/stories/Franz_Kafka/饥饿艺术家) or [Original German](/literature/stories/Franz_Kafka/Ein_Hungerkuenstler).
 
 The phrase "*Muss es sein? Es muss sein!*" that you see beneath my name comes from a piece of music composed by Beethoven. It's part of a musical work called String Quartet No. 16 in F major, Op. 135. This particular phrase means "*Must it be? It must be!*". If you are intereted, you can listen to it [here](https://www.bilibili.com/video/BV1Zx411Z7t6/?spm_id_from=333.788.recommend_more_video.-1&vd_source=fe2d68b49d744ceffb09c45be39b9f4a).
-## Contact
-
-
-To reach me, you can send an e-mail to <annabellee123456@outlook.com>.
-
-For academic matters, I can be reached at <hongyu.wang22@imperial.ac.uk>.

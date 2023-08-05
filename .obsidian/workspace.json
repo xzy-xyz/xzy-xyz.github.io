@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_additional_pages/Aboutme.md",
+                "file": "_posts/2023-08-05-aboume.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_additional_pages/Aboutme.md",
+                "file": "_posts/2023-08-05-aboume.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_additional_pages/Aboutme.md",
+                "file": "_posts/2023-08-05-aboume.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_additional_pages/Aboutme.md"
+                "file": "_posts/2023-08-05-aboume.md"
               }
             }
           }
@@ -148,6 +148,7 @@
   },
   "active": "448ae29ee3751586",
   "lastOpenFiles": [
+    "_additional_pages/Aboutme.md",
     "_posts/2023-08-05-aboume.md"
   ]
 }
