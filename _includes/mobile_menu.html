@@ -1,11 +1,9 @@
 <nav class="mobile_menu">
 
   <ul class="nav_list">
-    {% if site.user.aboutme %}
     <li class="nav_item">
-      <a href="{{ site.baseurl }}/aboutme.html">About me</a>
+      <a href="{{ site.user.aboutme }}">About me</a>
     </li>
-    {% endif %}
 
     {% assign sorted_additional_pages = site.additional_pages | sort: 'order' %}
     {% for page in sorted_additional_pages %}

@@ -2,5 +2,18 @@
 layout: page
 ---
 
+<div class="archive">
+  <p class="archive_type"></p>
+  <ul>
+    <li>
+        <time class='archive_date' datetime='{{ post.date | date_to_xmlschema }}'>
+        </time>
+        <div class='archive_title'>
+          <a href="{{ site.user.aboutme }}">About me</a>
+        </div>
+      </li>
+  </ul>
+</div>
+
 {% include archive.html %}
 

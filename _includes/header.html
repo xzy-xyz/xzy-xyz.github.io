@@ -14,13 +14,11 @@
     <span class="header_mes">{{ site.user.message }}</span>
 
     <nav class="nav">
-      {% if site.user.aboutme %}
       <ul class="nav_list">
         <li class="nav_item">
-          <a href="{{ site.baseurl }}/aboutme.html">About me</a>
+          <a href="{{ site.user.aboutme }}">About me</a>
         </li>
       </ul>
-      {% endif %}
       {% assign sorted_additional_pages = site.additional_pages | sort: 'order' %}
       {% for page in sorted_additional_pages %}
       <ul class="nav_list">
