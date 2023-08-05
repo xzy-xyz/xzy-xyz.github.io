@@ -5,15 +5,15 @@ order: 1
 ---
 
 ## Contents
-- [Instruction](#instruction)
+- [Introduction](#introduction)
 - [Academic Interests](#academic-interests)
 - [Career and Entrepreneurship](#career-and-entrepreneurship)
 - [Interests](#interests)
 - [Contact](#contact)
 
-## Instruction
+## Introduction
 
-Hello, welcome to my personal page! What kind of a coincidence that destiny has steered you towards here! My name is WHY, a mathematics student at Imperial College London. 
+Hello, welcome to my personal page! What kind of a coincidence that destiny has steered you here! My name is WHY, a mathematics student at Imperial College London. 
 
 Here is a glimpse of me is in a self-indentified portrait, crafted by some anonymous soul painter :
 
@@ -43,12 +43,16 @@ In addition, I'm also a founder and co-founder of [DAA](https://mp.weixin.qq.com
 ## Interests
 
 In my free time, music is my constant companion. From Classical to Jazz, Rock-n-Roll, and Pop, I enjoy them all. I'm a true fan of "good" music, swaying to its rhythm like no one's watching. For more about this musical side, check out my music page.
+
 Literature also has its hold on me, especially Russian literature (from 1924). A writer I admire is [Anton Chekhov](https://en.wikipedia.org/wiki/Anton_Chekhov)(1860-1904). His plays are a favorite. If you share this fondness, feel free to connect. 
 
 By the way, the name of this site  is inspired by Kafka's well-known story *A Hunger artist*. If you're curious, you can read it in [English](/literature/stories/Franz_Kafka/A_Hunger_Artist), [Chinese](/literature/stories/Franz_Kafka/饥饿艺术家) or [Original German](/literature/stories/Franz_Kafka/Ein_Hungerkuenstler).
 
+*"Muss es sein? Es muss sein!"* under my name comes from the fourth movement of Beethoven's String Quartet No. 16 in F major, Op. 135. It is the last string quartet he wrote. The phase means "Must it be? It must be!". For full details, check out [here](https://en.wikipedia.org/wiki/String_Quartet_No._16_(Beethoven)).
+
 ## Contact
 
 
-To reach me, you can send an e-mail to <annabellee123456@outlook.com>
-For academic matters, I can be reached at <hongyu.wang22@imperial.ac.uk>
+To reach me, you can send an e-mail to <annabellee123456@outlook.com>.
+
+For academic matters, I can be reached at <hongyu.wang22@imperial.ac.uk>.
