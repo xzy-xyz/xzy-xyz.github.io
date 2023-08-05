@@ -5,9 +5,15 @@
       <input theme_toggle type="checkbox">
       <div class="button"></div>
     </label>
+    {% if site.user.music %}
+    <a class="header_circle" onclick="togglePlay();">
+      <img src="{{ site.user.pic | relative_url }}" alt="{{ site.user.picAlt }}">
+    </a>
+    {% else %}
     <a class="header_circle" href="{{ '/' | relative_url }}">
       <img src="{{ site.user.pic | relative_url }}" alt="{{ site.user.picAlt }}">
     </a>
+    {% endif %}
     <a class="header_name" href="{{ '/' | relative_url }}">{{ site.user.name }}
     </a>
     <span class="header_job">{{ site.user.job }}</span>
@@ -39,6 +45,18 @@
       {% endfor %}
     </nav>
   </div>
+
+  <script>
+    var play = false;
+    function togglePlay() {
+      if (play) {
+        song.pause();
+      } else {
+        song.play();
+      }
+      play = !play;
+    }
+  </script>
 
 </header>
 

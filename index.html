@@ -12,6 +12,13 @@ layout: page
           <a href="{{ site.user.aboutme }}">About me</a>
         </div>
       </li>
+      <li>
+        <time class='archive_date' datetime='{{ post.date | date_to_xmlschema }}'>
+        </time>
+        <div class='archive_title'>
+          <a href="{{ site.user.aboutthiswebsite }}">about this website</a>
+        </div>
+      </li>
   </ul>
 </div>
 

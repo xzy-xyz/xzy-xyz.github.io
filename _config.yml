@@ -24,6 +24,8 @@ user:
   picAlt: "An Exhibition of A Hunger Artist"
   job: Muss es sein? Es muss sein!
   aboutme: /aboutme.md
+  aboutthiswebsite: /README.md
+  music: #path to your music file
 
 exclude:
   - README.md
