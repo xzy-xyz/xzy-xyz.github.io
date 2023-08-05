@@ -6,6 +6,7 @@
       <div class="button"></div>
     </label>
     {% if site.user.music %}
+    <audio loop src="{{ site.user.music | relative_url }}" id="song"></audio>
     <a class="header_circle" onclick="togglePlay();">
       <img src="{{ site.user.pic | relative_url }}" alt="{{ site.user.picAlt }}">
     </a>
