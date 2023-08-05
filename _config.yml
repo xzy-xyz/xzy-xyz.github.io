@@ -23,8 +23,8 @@ user:
   pic: /assets/img/profile.jpg
   picAlt: "An Exhibition of A Hunger Artist"
   job: Muss es sein? Es muss sein!
-  aboutme: /aboutme.md
-  aboutthiswebsite: /README.md
+  aboutme: /aboutme
+  aboutthiswebsite: /README
   music: /1010008.mp3
 
 exclude:
