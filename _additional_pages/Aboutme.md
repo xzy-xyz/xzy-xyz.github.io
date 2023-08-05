@@ -14,7 +14,7 @@ order: 1
 
 ## Introduction
 
-Hello, welcome to my personal page! What kind of a coincidence that destiny has steered you here! My name is WHY, a mathematics student at Imperial College London. 
+Hello, welcome to my personal page. What kind of a coincidence that destiny has steered you here! My name is WHY, a mathematics student at [Imperial College London](https://www.imperial.ac.uk/mathematics/). 
 
 Here is a glimpse of me is in a self-indentified portrait, crafted by some anonymous soul painter :
 
