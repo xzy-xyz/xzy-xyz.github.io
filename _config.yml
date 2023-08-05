@@ -25,7 +25,7 @@ user:
   job: Muss es sein? Es muss sein!
   aboutme: /aboutme.md
   aboutthiswebsite: /README.md
-  music: #path to your music file
+  music: /1010008.mp3
 
 exclude:
   - README.md
