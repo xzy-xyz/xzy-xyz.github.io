@@ -25,7 +25,7 @@ user:
   job: Muss es sein? Es muss sein!
   aboutme: /aboutme
   aboutthiswebsite: /README
-  music: /Beethoven_ Piano Trio_No._7_in_B_flat.mp3
+  music: /Beethoven_Piano_Trio_No._7_in_B_flat.mp3
 
 exclude:
   - README.md
