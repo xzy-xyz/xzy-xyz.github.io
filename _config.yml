@@ -25,7 +25,7 @@ user:
   job: Muss es sein? Es muss sein!
   aboutme: /aboutme
   aboutthiswebsite: /README
-  music: /Piano_Trio_No_7_in_B-Flat_Major.mp3
+  music: /At_My_Most_Beautiful_(lyrics).mp3
 
 exclude:
   - README.md
