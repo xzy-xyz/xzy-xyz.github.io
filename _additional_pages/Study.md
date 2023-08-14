@@ -10,6 +10,8 @@ order: 2
 
 ### [Surviving the mathematics major at Imperial College London](/study/Imperial_mathematics/Imperial_mathematics)
 
+### [Mathematics](/study/Mathematics/main)
+
 
   
 
