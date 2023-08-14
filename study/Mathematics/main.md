@@ -7,4 +7,4 @@ title: Mathematics
 > 
 > <p align="right">— John von Neumann</p>
 
-[My reading notes on mathematics.](/study/Mathematics/reading_notes/main)
+## [My reading notes on mathematics.](/study/Mathematics/reading_notes/main)
