@@ -8,4 +8,4 @@ title: Computing Skills
 > <p align="right">--IT Crowd</p>
 
 
-##  [Data Science](/study/Computing_Skills/Data_Science/main.md)
+##  [Data Science](/study/Computing_Skills/Data_Science/main)
