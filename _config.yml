@@ -25,7 +25,7 @@ user:
   job: Muss es sein? Es muss sein!
   aboutme: /aboutme
   aboutthiswebsite: /README
-  music: /At_My_Most_Beautiful.mp3
+  music: /Pulp_Common_People.mp3
 
 exclude:
   - README.md
