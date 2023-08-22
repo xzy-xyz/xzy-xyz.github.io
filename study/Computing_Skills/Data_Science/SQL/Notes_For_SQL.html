@@ -387,6 +387,90 @@ pre[data-line] .line-highlight[data-end]:after {
 <td><code>GROUP BY</code> clause is used in collaboration with the SELECT statement to arrange identical data into groups.</td>
 <td><code>SELECT dep_id, COUNT(*) FROM employees GROUP BY dep_id;</code></td>
 </tr>
+<tr>
+<td>COUNT</td>
+<td><code>SELECT COUNT(column_name) FROM table_name WHERE condition;</code></td>
+<td><code>COUNT</code> function returns the number of rows that matches a specified criterion.</td>
+<td><code>SELECT COUNT(dep_id) FROM employees;</code></td>
+</tr>
+<tr>
+<td>AVG</td>
+<td><code>SELECT AVG(column_name) FROM table_name WHERE condition;</code></td>
+<td><code>AVG</code> function returns the average value of a numeric column.</td>
+<td><code>SELECT AVG(column_name) FROM table_name WHERE condition;</code></td>
+</tr>
+<tr>
+<td>SUM</td>
+<td><code>SELECT SUM(column_name) FROM table_name WHERE condition;</code></td>
+<td><code>SUM</code> function returns the total sum of a numeric column.</td>
+<td><code>SELECT SUM(salary) FROM employees;</code></td>
+</tr>
+<tr>
+<td>MIN</td>
+<td><code>MIN	SELECT MIN(column_name) FROM table_name WHERE condition;</code></td>
+<td><code>MIN</code> function returns the smallest value of the SELECTed column.</td>
+<td><code>SELECT MIN(salary) FROM employees;</code></td>
+</tr>
+<tr>
+<td>MAX</td>
+<td><code>SELECT MAX(column_name) FROM table_name WHERE condition;</code></td>
+<td><code>MAX</code> function returns the largest value of the SELECTed column.</td>
+<td><code>SELECT MAX(salary) FROM employees;</code></td>
+</tr>
+<tr>
+<td>ROUND</td>
+<td><code>SELECT ROUND(2number, decimals, operation) AS RoundValue;</code></td>
+<td><code>ROUND</code> function rounds a number to a specified number of decimal places.</td>
+<td><code>SELECT ROUND(salary) FROM employees;</code></td>
+</tr>
+<tr>
+<td>LENGTH</td>
+<td><code>SELECT LENGTH(column_name) FROM table;</code></td>
+<td><code>LENGTH</code> function returns the length of a string (in bytes).</td>
+<td><code>SELECT LENGTH(f_name) FROM employees;</code></td>
+</tr>
+<tr>
+<td>UCACE</td>
+<td><code>SELECT UCASE(column_name) FROM table;</code></td>
+<td><code>UCASE</code> function that displays the column name in each table in uppercase.</td>
+<td><code>SELECT UCASE(f_name) FROM employees;</code></td>
+</tr>
+<tr>
+<td>DISTINCT</td>
+<td><code>SELECT DISTINCT(column_name) FROM table;</code></td>
+<td><code>DISTINCT</code> function is used to display data without duplicates.</td>
+<td><code>SELECT DISTINCT(UCASE(f_name)) FROM employees;</code></td>
+</tr>
+<tr>
+<td>DAY</td>
+<td><code>SELECT DAY(column_name) FROM table</code></td>
+<td><code>DAY</code> function returns the day of the month for a given date</td>
+<td><code>SELECT DAY(b_date) FROM employees where emp_id = &apos;E1002&apos;;</code></td>
+</tr>
+<tr>
+<td>CURRENT DATE</td>
+<td><code>SELECT (CURRENT DATE - COLUMN) FROM table;</code></td>
+<td><code>CURRENT DATE</code> is used to display the current date.This can be subtracted from the previous date to get the difference.</td>
+<td><code>SELECT YEAR(CURRENT DATE - b_date) As AGE, CURRENT_DATE, b_date FROM employees;</code></td>
+</tr>
+<tr>
+<td>&#xFF5C;Subquery</td>
+<td><code>SELECT column_name [, column_name ] FROM table1 [, table2 ] WHERE column_name OPERATOR (SELECT column_name [, column_name ] FROM table1 [, table2 ] [WHERE])</code></td>
+<td><code>Subquery</code> is a query within another SQL query and embedded within the WHERE clause. A subquery is used to return data that will be used in the main query as a condition to further restrict the data to be retrieved.</td>
+<td><code>SELECT emp_id, fmame, lname, salary FROM employees where salary &lt; (SELECT AVG(salary) FROM employees);</code>  <code>SELECT * FROM ( SELECT emp_id, f_name, l_name, dep_id FROM employees) AS emp4all;</code>  <code>SELECT * FROM employees WHERE job_id IN (SELECT job_ident FROM jobs);</code></td>
+</tr>
+<tr>
+<td>Implicit Inner Join</td>
+<td><code>SELECT column_name(s) FROM table1, table2 WHERE table1.column_name = table2.column_name;</code></td>
+<td><code>Implicit Inner Join</code> combines the two or more records but displays only matching values in both tables. Inner join applies only the specified columns.</td>
+<td><code>SELECT * FROM employees, jobs where employees.job_id = jobs.job_ident;</code></td>
+</tr>
+<tr>
+<td>Implicit Cross Join</td>
+<td><code>SELECT column_name(s) FROM table1, table2;</code></td>
+<td><code>Implicit Cross Join</code> defines as a Cartesian product where the number of rows in the first table multiplied by the number of rows in the second table.</td>
+<td><code>SELECT * FROM employees, jobs;</code></td>
+</tr>
 </tbody>
 </table>
 
