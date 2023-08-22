@@ -12,6 +12,8 @@ order: 2
 
 ### [Mathematics](/study/Mathematics/main)
 
+### [Computing Skills](/study/Computing_Skills/main.md)
+
 
   
 
