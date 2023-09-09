@@ -9,3 +9,4 @@ title: My reading notes on mathematics
 
 
 ## [Vector Calculus, Linear Algebra, and Differential Forms, A Unified Approach by John H. Hubbard and Barbara Burke Hubbard](/study/Mathematics/reading_notes/Vector_Calculus_Linear_Algebra_And_Differential_Forms/main)
+## [Algebra by Michael Artin](/study/Mathematics/reading_notes/Algebra_Artin/main)
