@@ -12,6 +12,7 @@ $$\gdef\vv{\vec{\mathbb{v}}}$$
 $$\gdef\vw{\vec{\mathbb{w}}}$$
 $$\gdef\vx{\vec{\mathbb{x}}}$$
 $$\gdef\vy{\vec{\mathbb{y}}}$$
+
 ### 1.1 Introducing the actors: points and vectors
 
 #### Points and vectors: Positional data versus incremental data
@@ -279,4 +280,147 @@ Therefore, $$T$$ is one to one and onto, which means $$T$$ is invertible.
 
 ##### Definition 1.4.1 (Dot product)
 
-The *dot product* of two vectors $$\vec{v}$$ and $$\vec{w}$$ in $$\rr^n$$ is the number
+The *dot product* of two vectors $$\vec{v}$$ and $$\vec{w}$$ in $$\rr^n$$ is
+
+$$
+\vx \cdot \vy = \begin{matrix} x_1 \\ \vdots \\ x_n \end{matrix} \cdot \begin{matrix} y_1 \\ \vdots \\ y_n \end{matrix} = x_1 y_1 + \cdots + x_n y_n
+$$
+
+The dot product is commutative and distributive, but not associative.
+
+##### Definition 1.4.2 (Length of a vector)
+
+The *length* $$|\vx|$$ of a vector $$\vx \in \rr^n$$ is
+
+$$
+|\vx| = \sqrt{\vx \cdot \vx} = \sqrt{x_1^2 + \cdots + x_n^2}
+$$
+
+##### Remark
+
+What we call the length of a vector is often called the Euclidean norm.
+
+#### Length and dot product: Geometry interpretation
+
+##### Proposition 1.4.3 (Geometric interpretation of dot product)
+
+Let $$\vx, \vy$$ be vectors in $$\rr^2$$ or $$\rr^3$$, let $$\alpha$$ be the angle between them, then
+
+$$
+\vx \cdot \vy = |\vx||\vy| \cos \alpha
+$$
+
+**Proof**:
+
+Write $$|\vx - \vy|^2$$ in two ways(In a trangle and using distributive law):
+
+##### Corollary 1.4.4 (The dot product in terms of projections)
+
+If $$\vx$$ and $$\vy$$ are two vectors in $$\rr^2$$ or $$\rr^3$$, then $$\vx \cdot \vy$$ is the product of $$|\vx|$$ and the signed length of the projection of $$\vy$$ onto the line spanned by $$\vx$$. The signed length of the projection is positive if it points in the direction of $$\vx$$; it is negative if it points in the opposite direction.
+
+#### Defining angles betwwen vectors in $$\rr^n$$
+
+##### Theorem 1.4.5 (Schwarz's inequality)
+
+For any two vectors $$\vv$$ and $$\vw$$ in $$\rr^n$$, we have
+
+$$
+|\vv \cdot \vw| \leq |\vv||\vw|
+$$
+
+The equality holds if and only if $$\vv$$ and $$\vw$$ are linearly dependent.
+
+**Proof**:
+
+We consider the function 
+
+$$
+f(t) = |\vv + t \vw|^2 = (\vv + t \vw) \cdot (\vv + t \vw) = |\vv|^2 + 2t \vv \cdot \vw + t^2 |\vw|^2
+$$
+
+Since $$f(t)$$ is always positive, its discriminant is nonpositive:
+
+$$
+4(\vv \cdot \vw)^2 - 4 |\vv|^2 |\vw|^2 \leq 0
+$$
+
+which is equivalent to
+
+$$
+|\vv \cdot \vw| \leq |\vv||\vw|
+$$
+
+The second part of Schwarz's inequality that $$|\vv \cdot \vw| = |\vv| \vw|$$ if and only if $$\vv$$ and $$\vw$$ are linearly dependent. Then, we could write 
+
+$$
+\vw  = t \vv
+$$
+
+Then, we have
+
+$$
+|\vv \cdot \vw| = |\vv \cdot t \vv| = |t| |\vv|^2=|t||t\vw| = |\vv||\vw|
+$$
+
+Conversly, if the equlity holds, then the discriminant is zero, which means $$\vv$$ and $$\vw$$ are linearly dependent.
+
+Schwarz's inequality allows us to define the angle between two vectors in $$\rr^n$$.
+
+##### Definition 1.4.6 (Angle between vectors)
+
+The angle between two vectors $\vec{v}$ and $\vec{w}$ in $\mathbb{R}^{n}$ is that angle $\alpha$ satisfying $0 \leq \alpha \leq \pi$ such that
+
+$$
+\cos \alpha=\frac{(\vec{v} \cdot \vec{w})}{|\vec{v}||\vec{w}|} .
+$$
+
+##### Corollary 1.4.7
+
+Two vectors are orthogonal if their dot product is zero.
+
+##### Theorem 1.4.9 (Triangle inequality)
+
+For any two vectors $$\vv$$ and $$\vw$$ in $$\rr^n$$, we have
+
+$$
+|\vv + \vw| \leq |\vv| + |\vw|
+$$
+
+**Proof**:
+
+It is straightforward by the definition of length and Schwarz's inequality.
+
+#### Measring matrices
+
+##### Definition 1.4.10 (The length of a matrix)
+
+If $$A$$ is an $$m \times n$$ matrix, then its *length* $$|A|$$ is the square root of the sum of the squares of all its entries:
+
+$$
+|A| = \sqrt{\sum_{i=1}^m \sum_{j=1}^n |a_{i,j}|^2} = \sum_{i = 1, \ldots, m} \sum_{j = 1, \ldots, n} |a_{i,j}|^2
+$$
+
+##### Remark
+
+The length $$|A|$$ is also called the Frobenius norm of $$A$$.
+
+#### Length and matrix multiplication
+
+##### Proposition 1.4.11. 
+
+a. If $A$ is an $n \times m$ matrix, and $\vec{b}$ is a vector in $\mathbb{R}^{m}$, then
+
+$$
+|A \vec{b}| \leq|A||\vec{b}|
+$$
+
+b. If $A$ is an $n \times m$ matrix, and $B$ is a $m \times k$ matrix, then
+
+$$
+|A B| \leq|A||B|
+$$
+
+
+
+
+
