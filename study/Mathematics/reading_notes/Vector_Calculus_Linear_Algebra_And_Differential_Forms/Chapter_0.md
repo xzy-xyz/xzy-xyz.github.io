@@ -2,15 +2,6 @@
 layout: simple
 title: Chapter 0 Preliminaries
 ---
-$\gdef\rr{\mathbb{R}}$
-$\gdef\cc{\mathbb{C}}$
-$\gdef\zz{\mathbb{Z}}$
-$\gdef\qq{\mathbb{Q}}$
-$\gdef\nn{\mathbb{N}}$
-$\gdef\vv{\vec{v}}$
-$\gdef\vw{\vec{w}}$
-
-
 ### 0.1 Reading mathematics
 
 #### Sum and product notations

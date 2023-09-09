@@ -2,15 +2,6 @@
 layout: simple
 title: Chapter 1 Vector, Matrices, and Derivatives
 ---
-$\gdef\rr{\mathbb{R}}$
-$\gdef\cc{\mathbb{C}}$
-$\gdef\zz{\mathbb{Z}}$
-$\gdef\qq{\mathbb{Q}}$
-$\gdef\nn{\mathbb{N}}$
-$\gdef\vv{\vec{v}}$
-$\gdef\vw{\vec{w}}$
-
-
 ### 1.1 Introducing the actors: points and vectors
 
 #### Points and vectors: Positional data versus incremental data
@@ -139,52 +130,54 @@ An *upper triangular matrix* is a matrix whose entries below the main diagonal a
 
 #### Applications: Probabilities and graphs
 
-##### Proposition 1.2.23. For any graph formed of vertices connected by edges, the number of possible walks of length $$n$$ from vertex $$V_i$$ to vertex $$V_j$$ is given by the $$(i,j)$$th entry of the matrix $$A^n$$ formed by taking the $$n$$th power of the graph's adjacency matrix $$A$$.
+##### Proposition 1.2.23. 
+
+For any graph formed of vertices connected by edges, the number of possible walks of length $$n$$ from vertex $$V_i$$ to vertex $$V_j$$ is given by the $$(i,j)$$th entry of the matrix $$A^n$$ formed by taking the $$n$$th power of the graph's adjacency matrix $$A$$.
 
 **Proof:**(Wait to be finished)
 
 ### 1.3 What the Actors do: Matrix Multiplication as a Linear Transformation
 
-#### Definition 1.3.2 (Linear transformation from $$\rr^n$$ to $$\rr^m$$)
+#### Definition 1.3.2 (Linear transformation from $$\mathbb{R}^n$$ to $$\mathbb{R}^m$$)
 
-A *linear transformation* $$T: \rr^n \to \rr^m$$ is a mapping such that for all scalars $$a$$ and all $$\vec{v}$$ and $$\vec{w}$$ in $$\rr^n$$,
+A *linear transformation* $$T: \mathbb{R}^n \to \mathbb{R}^m$$ is a mapping such that for all scalars $$a$$ and all $$\vec{v}$$ and $$\vec{w}$$ in $$\mathbb{R}^n$$,
 
 $$
-T(\vv + \vw) = T(\vv) + T(\vw)\quad \text{and} \quad T(a\vv) = aT(\vv)
+T(\vec{v} + \vec{w}) = T(\vec{v}) + T(\vec{w})\quad \text{and} \quad T(a\vec{v}) = aT(\vec{v})
 $$
 
 #### Theorem 1.3.4 (Matrices and linear transformations)
 
-1. Any $$m \times n$$ matrix $$A$$ defines a linear transformation $$T:\rr^n \to \rr^m$$ by matrix multiplication:
+1. Any $$m \times n$$ matrix $$A$$ defines a linear transformation $$T:\mathbb{R}^n \to \mathbb{R}^m$$ by matrix multiplication:
 
 $$
-T(\vv) = A\vv
+T(\vec{v}) = A\vec{v}
 $$
 
-2. Every linear transformation $$T:\rr^n \to \rr^m$$ is given by multiplication by an $$m \times n$$ matrix $[T]$$$:
+2. Every linear transformation $$T:\mathbb{R}^n \to \mathbb{R}^m$$ is given by multiplication by an $$m \times n$$ matrix $[T]$$$:
 
 $$
-T(\vv) = [T]\vv
+T(\vec{v}) = [T]\vec{v}
 $$
 
 where the $$i$$th column of $$[T]$$ is $$T(\vec{e}_i)$$.
 
 **Proof**:
 
-Start with a linear transformation $$T: \rr^n \to \rr^m$$, let $$\vv \in \rr^n$$ be any vector. We could write $$\vv$$ as a linear combination of the standard basis vectors:
+Start with a linear transformation $$T: \mathbb{R}^n \to \mathbb{R}^m$$, let $$\vec{v} \in \mathbb{R}^n$$ be any vector. We could write $$\vec{v}$$ as a linear combination of the standard basis vectors:
 
 $$
-\vv = \sum_{i=1}^n v_i \vec{e}_i
+\vec{v} = \sum_{i=1}^n v_i \vec{e}_i
 $$
 
 Then, by the linearity of $$T$$, we have
 
 $$
-T(\vv) = T(\sum_{i=1}^n v_i \vec{e}_i) = \sum_{i=1}^n v_i T(\vec{e}_i)
+T(\vec{v}) = T(\sum_{i=1}^n v_i \vec{e}_i) = \sum_{i=1}^n v_i T(\vec{e}_i)
 $$
 
-which is precisely the column vector $$[T]\vv$$. If we tranlate it into sum notation:
+which is precisely the column vector $$[T]\vec{v}$$. If we tranlate it into sum notation:
 
 $$
-T(\vv) = \sum_{i=1}^n v_i T(\vec{e}_i) = v_1 T(\vec{e}_1) + \cdots + v_n T(\vec{e}_n) = [T] \begin{matrix}v_1 \\ v_2 \\ \vdots \\ v_n\end{matrix} = [T]\vv
+T(\vec{v}) = \sum_{i=1}^n v_i T(\vec{e}_i) = v_1 T(\vec{e}_1) + \cdots + v_n T(\vec{e}_n) = [T] \begin{matrix}v_1 \\ v_2 \\ \vdots \\ v_n\end{matrix} = [T]\vec{v}
 $$
