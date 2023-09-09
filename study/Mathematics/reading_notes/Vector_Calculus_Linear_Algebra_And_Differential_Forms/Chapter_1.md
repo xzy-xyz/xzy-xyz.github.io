@@ -2,6 +2,14 @@
 layout: simple
 title: Chapter 1 Vector, Matrices, and Derivatives
 ---
+
+$$\gdef\rr{\mathbb{R}}$$
+$$\gdef\cc{\mathbb{C}}$$
+$$\gdef\zz{\mathbb{Z}}$$
+$$\gdef\nn{\mathbb{N}}$$
+$$\gdef\qq{\mathbb{Q}}$$
+$$\gdef\vv{\vec{\mathbb{v}}}$$
+$$\gdef\vw{\vec{\mathbb{w}}}$$
 ### 1.1 Introducing the actors: points and vectors
 
 #### Points and vectors: Positional data versus incremental data
@@ -138,7 +146,7 @@ For any graph formed of vertices connected by edges, the number of possible walk
 
 ### 1.3 What the Actors do: Matrix Multiplication as a Linear Transformation
 
-#### Definition 1.3.2 (Linear transformation from $$\mathbb{R}^n$$ to $$\mathbb{R}^m$$)
+##### Definition 1.3.2 (Linear transformation from $$\mathbb{R}^n$$ to $$\mathbb{R}^m$$)
 
 A *linear transformation* $$T: \mathbb{R}^n \to \mathbb{R}^m$$ is a mapping such that for all scalars $$a$$ and all $$\vec{v}$$ and $$\vec{w}$$ in $$\mathbb{R}^n$$,
 
@@ -146,7 +154,7 @@ $$
 T(\vec{v} + \vec{w}) = T(\vec{v}) + T(\vec{w})\quad \text{and} \quad T(a\vec{v}) = aT(\vec{v})
 $$
 
-#### Theorem 1.3.4 (Matrices and linear transformations)
+##### Theorem 1.3.4 (Matrices and linear transformations)
 
 1. Any $$m \times n$$ matrix $$A$$ defines a linear transformation $$T:\mathbb{R}^n \to \mathbb{R}^m$$ by matrix multiplication:
 
@@ -179,5 +187,91 @@ $$
 which is precisely the column vector $$[T]\vec{v}$$. If we tranlate it into sum notation:
 
 $$
-T(\vec{v}) = \sum_{i=1}^n v_i T(\vec{e}_i) = v_1 T(\vec{e}_1) + \cdots + v_n T(\vec{e}_n) = [T] \begin{matrix}v_1 \\ v_2 \\ \vdots \\ v_n\end{matrix} = [T]\vec{v}
+T(\vec{v}) = \sum_{i=1}^n v_i T(\vec{e}_i) = v_1 T(\vec{e}_1) + \cdots + v_n T(\vec{e}_n) = [T] \left[\begin{array}{c} v_1 \\ \vdots \\ v_n \end{array}\right] = [T]\vec{v}
 $$
+
+##### Theorem 1.3.10 (Composition corresponds to matrix multiplication)
+
+Suppose $$S: \rr^n \to \rr^m$$ and $$T: \rr^m \to \rr^l$$ are linear transformation given by the matrices $$[S]$$ and $$[T]$$ respectively. Then the composition $$T \circ S: \rr^n \to \rr^l$$ is linear and given
+by
+
+$$
+[T \circ S] = [T][S]
+$$
+
+**Proof**:
+Apply the definition of linear transformation to $$T \circ  S$$. Therefore, it is linear.
+
+The equation is a statement about matrix multiplication. We will use the following fact derived from the definition of matrix multiplication:
+
+1. $$A \vec{e}_i$$ is the $$i$$th column of $$A$$.
+2. The $$i$$the column of $$AB$$ is $$A(B\vec{e}_i)$$.
+
+$$
+[T \circ S] \vec{e}_i = T(S(\vec{e}_i)) = T([S]\vec{e}_i) = [T][S]\vec{e}_i
+$$
+
+Since $$T \circ S$$ is linear, it is given by the matrix $$[T \circ S]$$. while the definition of composition given the second equlity.
+
+##### Theorem 1.3.12 (Matrix multiplication is associative)
+
+If $$A, B, C$$ are matrices such that the products $$AB$$ and $$BC$$ are defined, then
+
+$$
+(AB)C = A(BC)
+$$
+
+#### Invertibility of matrices and linear transformation
+
+Recall that a mapping is invertible if it is one to one and onto.
+
+##### Proposition 1.3.14 
+
+A linear transformation $$T: \rr^n \to \rr^m$$ is invertible if and only if its matrix $$[T]$$ is invertible, and
+
+$$
+[T^{-1}] = ([T])^{-1}
+$$
+
+**Proof**:
+
+- $$\Rightarrow$$:
+  We suppose that $$T$$ is invertible. Then $$T$$ is one to one and onto. We will show that $$T^{-1}$$ is also linear. Let $$\vec{v}, \vec{w} \in \rr^n$$, then 
+
+  $$
+    T(a T^{-1}(\vec{v}) + b T^{-1}(\vec{w})) = a T(T^{-1}(\vec{v})) + b T(T^{-1}(\vec{w})) = a \vec{v} + b \vec{w} = T \circ T^{-1} (a \vec{v} + b \vec{w})
+$$
+
+Since $$T$$ is one to one and onto, $$T^{-1}$$ is linear. Therefore, $$T^{-1}$$ has matrix $$[T^{-1}]$$. We now check that
+
+$$
+[T^{-1}] = ([T])^{-1}
+$$
+
+Since $$T$$ is invertible, $$[T]$$ is invertible. Therefore, $$[T]^{-1}$$ exists. We have
+
+$$
+[TT^{-1}] = [I] = [T][T]^{-1} = [T][T^{-1}]
+$$
+
+Thus $$[T]$$ is invertible and its inverse $$[T]^{-1}$$ is $$[T^{-1}]$$.
+
+- $$\Leftarrow$$:
+  We suppose that $$[T]$$ is ivertible and we let $$S: \rr^m \to \rr^n$$ be the linear transformation such that $$S = [T]^{-1}$$. We need to show that $$T$$ is one to one and onto. For onto, for any $$\vec{y} \in \rr^m$$, we have
+
+  $$
+  \vec{y} = I \vec{y} = [T][T]^{-1} \vec{y} = [T] S \vec{y} = T(S (\vec{y}))
+$$
+
+It showing that $$T$$ is onto. For one to one, we need to show that $$T(\vec{v}) = T(\vec{w})$$ implies $$\vec{v} = \vec{w}$$. 
+
+$$
+\vv = I \vv = ([S][T]) \vv = S(T(\vv)) = S(T(\vw)) = ([S][T]) \vw = I \vw = \vw
+$$
+
+Therefore, $$T$$ is one to one and onto, which means $$T$$ is invertible.
+
+### 1.4 The Gemoetry of $$\rr^n$$
+
+
+
