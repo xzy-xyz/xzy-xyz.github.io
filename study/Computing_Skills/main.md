@@ -9,3 +9,4 @@ title: Computing Skills
 
 
 ##  [Data Science](/study/Computing_Skills/Data_Science/main)
+##  [LeeCode Problems](/study/Computing_Skills/Leecode/main)
