@@ -525,13 +525,13 @@ We use the property $$\mathcal{F}\left\{\frac{d^{n} f}{d x^{n}}\right\}=(i \omeg
 
 The asymptotic behaviour of $$\mathrm{y}(\mathrm{t})$$ is what happens as $$t \rightarrow \infty$$
 
-$$\vec{y}^{*}$$ is a fixed point or equilibrium point of a system of 1st order ODEs if once $$\vec{y}\left(t_{0}\right)=\vec{y}^{*}$$ at some time $$t_{0}$$ then $$\forall t>t_{0}, \vec{y}(t)=\vec{y}^{*}$$. As the fixed point remains unchanged w.r.t time, at a fixed point we have that $$\left[\frac{d \vec{y}}{d t}\right]_{\vec{y}=\vec{y}^{*}}=0$$
+$$\vy^{*}$$ is a fixed point or equilibrium point of a system of 1st order ODEs if once $$\vy\left(t_{0}\right)=\vy^{*}$$ at some time $$t_{0}$$ then $$\forall t>t_{0}, \vy(t)=\vy^{*}$$. As the fixed point remains unchanged w.r.t time, at a fixed point we have that $$\left[\frac{d \vy}{d t}\right]_{\vy=\vy^{*}}=0$$
 
-A fixed point $$\vec{y}^{*}$$ s stability can be described in 3 ways:
+A fixed point $$\vy^{*}$$ s stability can be described in 3 ways:
 
-- Lyapunov stable if $$\forall \epsilon>0, \exists \delta>0$$ such that if $$\left\|\vec{y}(0)-\vec{y}^{*}\right\|<\delta \Longrightarrow \forall t \geq 0,\left\|\vec{y}(t)-\vec{y}^{*}\right\|<\epsilon$$. In words it means that that points close to the fixed point don't blow up but also they don't approach the fixed point
+- Lyapunov stable if $$\forall \epsilon>0, \exists \delta>0$$ such that if $$\left\|\vy(0)-\vy^{*}\right\|<\delta \Longrightarrow \forall t \geq 0,\left\|\vy(t)-\vy^{*}\right\|<\epsilon$$. In words it means that that points close to the fixed point don't blow up but also they don't approach the fixed point
 
-- Asymptotically stable if it is Lyapunov stable and $$\exists \delta>0$$ such that if $$\left\|\vec{y}(0)-\vec{y}^{*}\right\|<\delta$$ then $$\lim _{t \rightarrow \infty}\left\|\vec{y}(t)-\vec{y}^{*}\right\|=0$$
+- Asymptotically stable if it is Lyapunov stable and $$\exists \delta>0$$ such that if $$\left\|\vy(0)-\vy^{*}\right\|<\delta$$ then $$\lim _{t \rightarrow \infty}\left\|\vy(t)-\vy^{*}\right\|=0$$
 
 - Asymptotically unstable otherwise
 
@@ -661,16 +661,16 @@ $$
 
 ### Taylor Series
 
-If $$\vec{x}_{0}=\left(\begin{array}{l}x_{0} \\ y_{0}\end{array}\right), \overrightarrow{\Delta x}=\left(\begin{array}{c}\Delta x \\ \Delta y\end{array}\right)$$ and $$\vec{\nabla} f\left(\overrightarrow{x_{0}}\right)=\left(\begin{array}{c}\frac{\partial f}{\partial x} \\ \frac{\partial f}{\partial y}\end{array}\right)_{\overrightarrow{x_{0}}}$$, then the 2D Taylor expansion up to 2nd order is
+If $$\vx_{0}=\left(\begin{array}{l}x_{0} \\ y_{0}\end{array}\right), \overrightarrow{\Delta x}=\left(\begin{array}{c}\Delta x \\ \Delta y\end{array}\right)$$ and $$\vec{\nabla} f\left(\overrightarrow{x_{0}}\right)=\left(\begin{array}{c}\frac{\partial f}{\partial x} \\ \frac{\partial f}{\partial y}\end{array}\right)_{\overrightarrow{x_{0}}}$$, then the 2D Taylor expansion up to 2nd order is
 
 $$
-f\left(\vec{x}_{0}+\overrightarrow{\Delta x}\right)=f\left(\vec{x}_{0}\right)+\vec{\nabla} f\left(\vec{x}_{0}\right)^{T} \overrightarrow{\Delta x}+\frac{1}{2} \overrightarrow{\Delta x}^{T} H\left(\vec{x}_{0}\right) \overrightarrow{\Delta x}
+f\left(\vx_{0}+\overrightarrow{\Delta x}\right)=f\left(\vx_{0}\right)+\vec{\nabla} f\left(\vx_{0}\right)^{T} \overrightarrow{\Delta x}+\frac{1}{2} \overrightarrow{\Delta x}^{T} H\left(\vx_{0}\right) \overrightarrow{\Delta x}
 $$
 
 where 
 
 $$
-H\left(\vec{x}_{0}\right)
+H\left(\vx_{0}\right)
 $$ 
 
 is the Hessian matrix, defined as
@@ -678,9 +678,9 @@ is the Hessian matrix, defined as
 #### Haessian Matrix
 
 $$
-H_{i j}\left(\vec{x}_{0}\right)=\left(\frac{\partial^{2} f}{\partial x_{i} \partial y_{j}}\right)_{\vec{x}_{0}}, \text { so } H\left(\vec{x}_{0}\right)=\left[\begin{array}{cc}
-\left.\frac{\partial^{2} f}{\partial^{2} x}\right|_{\vec{x}_{0}} & \left.\frac{\partial^{2} f}{\partial x \partial y}\right|_{\vec{x}_{0}} \\
-\left.\frac{\partial^{2} f}{\partial x \partial y}\right|_{\vec{x}_{0}} & \left.\frac{\partial^{2} f}{\partial^{2} y}\right|_{\vec{x}_{0}}
+H_{i j}\left(\vx_{0}\right)=\left(\frac{\partial^{2} f}{\partial x_{i} \partial y_{j}}\right)_{\vx_{0}}, \text { so } H\left(\vx_{0}\right)=\left[\begin{array}{cc}
+\left.\frac{\partial^{2} f}{\partial^{2} x}\right|_{\vx_{0}} & \left.\frac{\partial^{2} f}{\partial x \partial y}\right|_{\vx_{0}} \\
+\left.\frac{\partial^{2} f}{\partial x \partial y}\right|_{\vx_{0}} & \left.\frac{\partial^{2} f}{\partial^{2} y}\right|_{\vx_{0}}
 \end{array}\right]
 $$
 
@@ -715,16 +715,16 @@ To sketch functions in 2 variables, we do the following:
 
 1. Check continuity and find singularities
 
-2. Find asymptotic behaviour: $$\lim _{x, y \rightarrow \pm \infty} f(x, y)$$ and $$\lim_{\vec{x} \rightarrow \vec{x}_{\text {sing }}} f(x, y)$$
+2. Find asymptotic behaviour: $$\lim _{x, y \rightarrow \pm \infty} f(x, y)$$ and $$\lim_{\vx \rightarrow \vx_{\text {sing }}} f(x, y)$$
 
-3. Obtain some level curves, e.g. $$f(\vec{x})=0$$ and find where $$f(\vec{x})>0$$ and $$f(\vec{x})<0$$
+3. Obtain some level curves, e.g. $$f(\vx)=0$$ and find where $$f(\vx)>0$$ and $$f(\vx)<0$$
 
 4. Find stationary points: minima, maxima and saddle points
 
-If $$\vec{x}^{*}$$ is a stationary point, we can find out what type of stationary point it is using the eigenvalues of the Hessian matrix $$H\left(\vec{x}^{*}\right)$$ :
+If $$\vx^{*}$$ is a stationary point, we can find out what type of stationary point it is using the eigenvalues of the Hessian matrix $$H\left(\vx^{*}\right)$$ :
 
-- If $$\lambda_{1}, \lambda_{2} \in \mathbb{R}^{+}$$, then $$\vec{x}^{*}$$ is a minimum
+- If $$\lambda_{1}, \lambda_{2} \in \mathbb{R}^{+}$$, then $$\vx^{*}$$ is a minimum
 
-- If $$\lambda_{1}, \lambda_{2} \in \mathbb{R}^{-}$$, then $$\vec{x}^{*}$$ is a maximum
+- If $$\lambda_{1}, \lambda_{2} \in \mathbb{R}^{-}$$, then $$\vx^{*}$$ is a maximum
 
-- If $$\lambda_{1} \in \mathbb{R}^{+}$$and $$\lambda_{2} \in \mathbb{R}^{-}$$or vice versa then $$\vec{x}^{*}$$ is a saddle point
+- If $$\lambda_{1} \in \mathbb{R}^{+}$$and $$\lambda_{2} \in \mathbb{R}^{-}$$or vice versa then $$\vx^{*}$$ is a saddle point

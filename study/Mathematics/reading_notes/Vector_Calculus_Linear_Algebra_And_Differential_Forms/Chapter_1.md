@@ -10,6 +10,8 @@ $$\gdef\nn{\mathbb{N}}$$
 $$\gdef\qq{\mathbb{Q}}$$
 $$\gdef\vv{\vec{\mathbb{v}}}$$
 $$\gdef\vw{\vec{\mathbb{w}}}$$
+$$\gdef\vx{\vec{\mathbb{x}}}$$
+$$\gdef\vy{\vec{\mathbb{y}}}$$
 ### 1.1 Introducing the actors: points and vectors
 
 #### Points and vectors: Positional data versus incremental data
@@ -257,10 +259,10 @@ $$
 Thus $$[T]$$ is invertible and its inverse $$[T]^{-1}$$ is $$[T^{-1}]$$.
 
 - $$\Leftarrow$$:
-  We suppose that $$[T]$$ is ivertible and we let $$S: \rr^m \to \rr^n$$ be the linear transformation such that $$S = [T]^{-1}$$. We need to show that $$T$$ is one to one and onto. For onto, for any $$\vec{y} \in \rr^m$$, we have
+  We suppose that $$[T]$$ is ivertible and we let $$S: \rr^m \to \rr^n$$ be the linear transformation such that $$S = [T]^{-1}$$. We need to show that $$T$$ is one to one and onto. For onto, for any $$\vy \in \rr^m$$, we have
 
   $$
-  \vec{y} = I \vec{y} = [T][T]^{-1} \vec{y} = [T] S \vec{y} = T(S (\vec{y}))
+  \vy = I \vy = [T][T]^{-1} \vy = [T] S \vy = T(S (\vy))
 $$
 
 It showing that $$T$$ is onto. For one to one, we need to show that $$T(\vec{v}) = T(\vec{w})$$ implies $$\vec{v} = \vec{w}$$. 
@@ -273,5 +275,8 @@ Therefore, $$T$$ is one to one and onto, which means $$T$$ is invertible.
 
 ### 1.4 The Gemoetry of $$\rr^n$$
 
+#### The dot product
 
+##### Definition 1.4.1 (Dot product)
 
+The *dot product* of two vectors $$\vec{v}$$ and $$\vec{w}$$ in $$\rr^n$$ is the number
