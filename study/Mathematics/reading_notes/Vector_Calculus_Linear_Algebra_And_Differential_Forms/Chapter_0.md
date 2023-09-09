@@ -1,19 +1,15 @@
 ---
 layout: simple
-title: Vector Calculus, Linear Algebra, and Differential Forms, A Unified Approach - Notes
+title: Chapter 0 Preliminaries
 ---
+$\gdef\rr{\mathbb{R}}$
+$\gdef\cc{\mathbb{C}}$
+$\gdef\zz{\mathbb{Z}}$
+$\gdef\qq{\mathbb{Q}}$
+$\gdef\nn{\mathbb{N}}$
+$\gdef\vv{\vec{v}}$
+$\gdef\vw{\vec{w}}$
 
-##### by John H. Hubbard and Barbara Burke Hubbard
-
- This is a note for the book *Vector Calculus, Linear Algebra, and Differential Forms* by John H. Hubbard and Barbara Burke Hubbard. The book is available at [here](https://pi.math.cornell.edu/~hubbard/vectorcalculus.html).
-
-> *... The numerical interpretation ... is however necessary. ... So ... long as it is not obtained, the solutions may be said to remain incomplete and useless, and the truth which it is proposed to discover is no less hidden in the formulae of analysis than it was in the physical problem itself.*
-> 
-><p align="right">--Joseph Fourier, The Analytic Theory of Heat, 1822 </p>
-
-## Contents
-
-## 0. Preliminaries
 
 ### 0.1 Reading mathematics
 
@@ -399,8 +395,8 @@ c. Construct $$h : A \to B$$ by setting
 
 $$
 h(a) = \begin{cases}
-f(a) \quad \text{if $$a$$ belongs to a maximal chain of type 1 or 2} \\
-g^{-1}(a) \quad \text{if $$a$$ belongs to a maximal chain of type 3}
+f(a) \quad \text{a belongs to a maximal chain of type 1 or 2 }\\
+g^{-1}(a) \quad \text{if a belongs to a maximal chain of type 3}
 \end{cases}
 $$
 
@@ -622,77 +618,3 @@ where $$k = 0, 1, \cdots, n-1$$.
 **Proof:**
 
 The proof is very easy to check.
-
-##  1. Vectors, matrices, and derivatives
-
-### 1.1 Introducing the actors: points and vectors
-
-#### Points and vectors: Positional data versus incremental data
-
-##### Definition 1.1.1 (Points, vectors, and coordinates)
-
-The element of $$\mathbb{R}^n$$ with coordinates $$x_1, \cdots, x_n$$ can be interpreted as the *point*
-
-$$
-\mathbf{x} = \begin{pmatrix} x_1 \\ \vdots \\ x_n \end{pmatrix}
-$$
-
-or, as the *vector*
-
-$$
-\vec{\mathbf{x}} = \begin{pmatrix} x_1 \\ \vdots \\ x_n \end{pmatrix}
-$$
-
-which represents an increment.
-
-#### Subtraction and addition of points and vectors
-
-Vectors are added by adding the corresponding coordinates:
-
-$$
-\vec{\mathbf{x}} + \vec{\mathbf{y}} = \begin{pmatrix} x_1 \\ \vdots \\ x_n \end{pmatrix} + \begin{pmatrix} y_1 \\ \vdots \\ y_n \end{pmatrix} = \begin{pmatrix} x_1 + y_1 \\ \vdots \\ x_n + y_n \end{pmatrix}
-$$
-
-The result is a vector. Similarly, vectors are subtracted by subtracting the corresponding coordinates.
-
-#### Multiplying vectors by scalars
-
-Multiplication of a vector by a *scalar* is straightforward:
-
-$$
-\lambda \vec{\mathbf{x}} = \lambda \begin{pmatrix} x_1 \\ \vdots \\ x_n \end{pmatrix} = \begin{pmatrix} \lambda x_1 \\ \vdots \\ \lambda x_n \end{pmatrix}
-$$
-
-#### Subsets and subspace of $$\mathbb{R}^n$$
-
-##### Definition 1.1.5 (Subspace of $$\mathbb{R}^n$$)
-
-A nonempty subset $V \subset \mathbb{R}^n$ is a *subspace* if it is closed under addition and scalar multiplication by scalars; that is, $$V$$ is a subspace if when
-
-$$
-\vec{\mathbf{x}}, \vec{\mathbf{y}} \in V \text{ then } \vec{\mathbf{x}} + \vec{\mathbf{y}} \in V \text{ and } \lambda \vec{\mathbf{x}} \in V
-$$
-
-##### Remark
-
-Roughly, a subspace is a flat subset that goes through the origin.
-
-##### Example
-
-What is the subsapace of $$\mathbb{R}^2$$? There are exactly treee kinds: line through the origin, and two trivial subspaces, the origin and the whole space. Intutively, it is clear that a line through the origin is a subspace of dimension 1 and a plane through the origin is a subspace of dimension 2: it takes one number to locate a point on a line, and two numbers to locate a point on a plane.
-
-#### The standard basis vectors
-
-##### Definition 1.1.7 (Standard basis vectors)
-
-The *standard basis vectors* in $$\mathbb{R}^n$$ are the vectors $$\vec{\mathbf{e}}_j$$ with $$n$$ entries, the $$j$$th entry $$1$$ and the others zero.
-
-#### Vector fields
-
-##### Definition 1.1.8 (Vector field)
-
-A *vector field* is a function whose input in $$\mathbb{R}^n$$ and whose output is a vector in $$\mathbb{R}^n$$ emanating from that point.
-
-##### Example
-
-By "field", we mean data that varies from point to point. Some fields, like temperature or pressure distribution, are scalar fields: they associate a number to every point. Some fields, like the Newtonian gravitational field, are best modeled by vector fields, which associate a vector to every point. Others, like electromagnetic field and charge distributions, are best modeled by form field. Still others, like the Einsteinian gravitational field of general relativity, are none of the above.
