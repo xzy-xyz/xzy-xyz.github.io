@@ -952,6 +952,8 @@ Let $$X$$ be a subset of $$\rr^n$$. Then a mapping $$\mathbb{f}: X \to \rr^m$$ i
 
 Every linear transformation $$T: \rr^n \to \rr^m$$ is uniformly continuous.
 
+**Proof**
+
 
 
 
