@@ -53,11 +53,11 @@ $$
 
 This function has the following properties:
 
-- (i) for all $$x \in \mathbb{R}$$, we have $$|x| \geq 0$$, with $$|x|=0$$ if and only if $$x=0$$,
+- (i) For all $$x \R$$, we have $$|x| \geq 0$$, with $$|x|=0$$ if and only if $$x=0$$,
 
-- (ii) for all $$x$$ and $$y$$ in $$\mathbb{R},|x y|=|x||y|$$,
+- (ii) For all $$x$$ and $$y$$ in $$\mathbb{R},|x y|=|x||y|$$,
 
-- (iii) for all $$x$$ and $$y$$ in $$\mathbb{R}$$,
+- (iii) For all $$x$$ and $$y$$ in $$\R$$,
 
 $$
 |x+y| \leq|x|+|y|
@@ -131,13 +131,41 @@ Note that the inner product of two vectors is a real number, not a vector.
 The norm function on $$\R^n$$ has the following properties:
 
 - (i) For all $$x \in \R^n$$, we have $$\norm{x} \geq 0$$, with $$\norm{x}=0$$ if and only if $$x=0$$.
+  
 - (ii) For all $$x \in \R^n$$ and $$\lambda \in \R$$, we have $$\norm{\lambda x} = |\lambda|\norm{x}$$.
+  
 - (iii) For all $$x,y \in \R^n$$, we have $$\norm{x+y} \leq \norm{x} + \norm{y}$$.
 
 The third property in the above list is called the **triangle inequality** for the norm function.
 
 #### Remark 1.1
 
-The properties that the norm function satisfies could be used in an abstract fashion to define more general normed vector spaces. The norm
+The properties that the norm function satisfies could be used in an abstract fashion to define more general normed vector spaces. The norm gives us a useful notion of distance between two points in $$\R^n$$.
+
+### 1.1.3 Convergence of sequences in Euclidean spaces
+
+#### Definition (Convergence of sequences)
+
+A sequence $$(x_i)_{i=0}^{\infty}$$ with $$x_i \in \R^n$$ converges to the vector $$x \in \R^n$$ if the following holds: For every $$\epsilon > 0$$, there exists $$N \in \N$$ such that for all $$i \geq N$$, we have $$\norm{x_i - x} < \epsilon$$. We then write:
+
+$$
+x_{i} \rightarrow x, \quad \text { as } i \rightarrow \infty,
+$$
+
+or
+
+$$
+\lim _{i \rightarrow \infty} x_{i}=x
+$$
+
+#### Proposition 1.1.
+
+The sequence of vectors $$(x_i)_{i=0}^{\infty}$$ with $$x_i \in \R^n$$ converges to the vector $$x \in \R^n$$ if and only if each component of $$x_i$$ converges to the corresponding compoent of $$x$$. That is, if we write:
+
+$$
+x_i = (x_i^1, x_i^2,\dots,x_i^n),\quad x = (x^1, x^2,\dots,x^n),
+$$
+
+then, $$x_i \to x$$ as $$i \to \infty$$ if and only if for all $$k = 1, 2,\dots,n$$, we have $$x_i^k \to x^k$$ as $$i \to \infty$$.
 
 
