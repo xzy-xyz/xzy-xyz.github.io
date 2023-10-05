@@ -133,4 +133,15 @@ $$
 \inner{x}{y} := \sum_{i=1}^n x^i y^i = x^1 y^1 + x^2 y^2 + \dots + x^n y^n.
 $$
 
+Then we could use the inner product to define the **length** or **norm** function
+
+#### Definition (Norm)
+
+The **norm** or **length** function
+
+$$
+\norm{\cdot}:\R^n\to[0,\infty)
+$$
+
+
 
