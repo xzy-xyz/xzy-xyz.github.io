@@ -53,11 +53,11 @@ $$
 
 This function has the following properties:
 
-- (i) For all $$x \R$$, we have $$|x| \geq 0$$, with $$|x|=0$$ if and only if $$x=0$$,
+- (i) For all $$x \in \R$$, we have $$|x| \geq 0$$, with $$|x|=0$$ if and only if $$x=0$$.
 
-- (ii) For all $$x$$ and $$y$$ in $$\mathbb{R},|x y|=|x||y|$$,
+- (ii) For all $$x$$ and $$y$$ in $$\R$$, $$|xy| = |x| |y|$$.
 
-- (iii) For all $$x$$ and $$y$$ in $$\R$$,
+- (iii) For all $$x$$ and $$y$$ in $$|R$$, we have
 
 $$
 |x+y| \leq|x|+|y|
