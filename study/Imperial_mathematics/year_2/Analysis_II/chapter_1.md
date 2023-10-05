@@ -1,5 +1,5 @@
 ---
-title: Chapter I: Differentiation in higher dimensions
+title: Chapter I Differentiation in higher dimensions
 layout: simple
 ---
 
