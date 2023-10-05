@@ -12,3 +12,5 @@ layout: simple
 ><p align="right">--Henri Poincaré, The Value of Science, 1905 </p>
 
 - [Chapter I: Differentiation in higher dimensions](/study/Imperial_mathematics/year_2/Analysis_II/chapter_1)
+  
+- [Chapter II: Metric and topological spaces](/study/Imperial_mathematics/year_2/Analysis_II/chapter_2)
