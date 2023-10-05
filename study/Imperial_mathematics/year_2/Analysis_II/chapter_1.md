@@ -1,5 +1,5 @@
 ---
-title: Chapter I: Differentiation in higher dimensions
+title: Differentiation in higher dimensions
 layout: simple
 ---
 
@@ -135,5 +135,9 @@ The norm function on $$\R^n$$ has the following properties:
 - (iii) For all $$x,y \in \R^n$$, we have $$\norm{x+y} \leq \norm{x} + \norm{y}$$.
 
 The third property in the above list is called the **triangle inequality** for the norm function.
+
+#### Remark 1.1
+
+The properties that the norm function satisfies could be used in an abstract fashion to define more general normed vector spaces. The norm
 
 
