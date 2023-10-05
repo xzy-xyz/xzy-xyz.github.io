@@ -34,7 +34,6 @@ $$\DeclareMathOperator{\null}{\mathrm{null}}$$
 $$\DeclareMathOperator{\det}{\mathrm{det}}$$
 $$\DeclareMathOperator{\gcd}{\mathrm{gcd}}$$
 $$\DeclareMathOperator{\lcm}{\mathrm{lcm}}$$
-$$
 
 
 ## 1.1 Euclidean spaces
