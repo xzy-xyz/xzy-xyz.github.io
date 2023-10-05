@@ -143,5 +143,20 @@ $$
 \norm{\cdot}:\R^n\to[0,\infty)
 $$
 
+as 
+
+$$
+\norm{x} := \sqrt{\inner{x}{x}} = \inner{x}{x}^{\frac{1}{2}}
+$$
+
+Note that the inner product of two vectors is a real number, not a vector.
+
+The norm function on $$\R^n$$ has the following properties:
+
+- (i) For all $$x \in \R^n$$, we have $$\norm{x} \geq 0$$, with $$\norm{x}=0$$ if and only if $$x=0$$.
+- (ii) For all $$x \in \R^n$$ and $$\lambda \in \R$$, we have $$\norm{\lambda x} = |\lambda|\norm{x}$$.
+- (iii) For all $$x,y \in \R^n$$, we have $$\norm{x+y} \leq \norm{x} + \norm{y}$$.
+
+The third property in the above list is called the **triangle inequality** for the norm function.
 
 
