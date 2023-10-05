@@ -9,32 +9,15 @@ layout: simple
 
 based on the notes and lectures by [Dr. Davoud Cheraghi](https://www.ma.imperial.ac.uk/~dcheragh/)
 
-
-
-
-
-$$\newcommand{\inner}[2]{\left\langle\strut#1,#2\right\rangle}$$
-$$\newcommand{\norm}[1]{\left\Vert\strut#1\right\Vert}$$
-$$\newcommand{\abs}[1]{\left\vert\strut#1\right\vert}$$
-$$\newcommand{\T}{^\mathsf T}$$
-$$\newcommand{\H}{^\mathsf H}$$
-$$\newcommand{\d}{\ \mathrm{d}}$$
-$$\newcommand{\i}{\mathrm{i}\mkern1mu}$$
-$$\newcommand{\N}{\mathbb{N}}$$
-$$\newcommand{\Z}{\mathbb{Z}}$$
-$$\newcommand{\Q}{\mathbb{Q}}$$
-$$\newcommand{\R}{\mathbb{R}}$$
-$$\newcommand{\C}{\mathbb{C}}$$
-$$\DeclareMathOperator{\dom}{\mathrm{Dom}}$$
-$$\DeclareMathOperator{\ran}{\mathrm{Ran}}$$
-$$\DeclareMathOperator{\ker}{\mathrm{Ker}}$$
-$$\DeclareMathOperator{\im}{\mathrm{Im}}$$
-$$\DeclareMathOperator{\rank}{\mathrm{rank}}$$
-$$\DeclareMathOperator{\null}{\mathrm{null}}$$
-$$\DeclareMathOperator{\det}{\mathrm{det}}$$
-$$\DeclareMathOperator{\gcd}{\mathrm{gcd}}$$
-$$\DeclareMathOperator{\lcm}{\mathrm{lcm}}$$
-
+$$\gdef\R{\mathbb{R}}$$
+$$\gdef\C{\mathbb{C}}$$
+$$\gdef\Z{\mathbb{Z}}$$
+$$\gdef\N{\mathbb{N}}$$
+$$\gdef\Q{\mathbb{Q}}$$
+$$\gdef\inner#1#2{\langle #1, #2 \rangle}$$
+$$\gdef\norm#1{\left\| #1 \right\|}$$
+$$\gdef\abs#1{\left| #1 \right|}$$
+$$\gdef\set#1{\left\{ #1 \right\}}$$
 
 ## 1.1 Euclidean spaces
 
