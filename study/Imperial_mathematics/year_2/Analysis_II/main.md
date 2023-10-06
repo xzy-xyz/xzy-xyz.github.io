@@ -19,7 +19,7 @@ layout: simple
 >>
 >>*To build $$\mathbb{R}$$, we do analysis.*
 >>
->><p align="right">-- Dr. Davoud Cheraghi</p>
+>><p align="right">-- Dr. Davoud Cheraghi, Imperial College London</p>
 
 
 #### [Part I: Differentiation in higher dimensions](/study/Imperial_mathematics/year_2/Analysis_II/chapter_1)
