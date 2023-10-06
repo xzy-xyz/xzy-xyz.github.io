@@ -11,7 +11,7 @@ based on the notes and lectures by [Dr. Davoud Cheraghi](https://www.ma.imperial
 
 $$\gdef\R{\mathbb{R}}$$
 $$\gdef\C{\mathbb{C}}$$
-$$\gdef\Z{\mathbb{Z}}$$
+$$\gdef\Z{\mathbb{Z}}$$ 
 $$\gdef\N{\mathbb{N}}$$
 $$\gdef\Q{\mathbb{Q}}$$
 $$\gdef\inner#1#2{\langle #1, #2 \rangle}$$
@@ -48,19 +48,19 @@ On $$\R$$, we have a notation of ordering $$\leq$$, so that we say whether a rea
 An important function defined on all real numbers is the modulus function, defined as
 
 $$
-|x|:= \begin{cases}x & x \geq 0 \\ -x & x<0 .\end{cases}
+\abs{x}:= \begin{cases}x & x \geq 0 \\ -x & x<0 .\end{cases}
 $$
 
 This function has the following properties:
 
-- (i) For all $$x \in \R$$, we have $$|x| \geq 0$$, with $$|x|=0$$ if and only if $$x=0$$.
+- (i) For all $$x \in \R$$, we have $$\abs{x} \geq 0$$, with $$\abs{x}=0$$ if and only if $$x=0$$.
 
-- (ii) For all $$x$$ and $$y$$ in $$\R$$, $$|xy| = |x| |y|$$.
-
-- (iii) For all $$x$$ and $$y$$ in $$|R$$, we have
+- (ii) For all $$x$$ and $$y$$ in $$\R$$, $$\abs{xy} = \abs{x} \abs{y}$$.
+  
+- (iii) For all $$x$$ and $$y$$ in $$\R$$, we have
 
 $$
-|x+y| \leq|x|+|y|
+\abs{x+y} \leq\abs{x}+\abs{y}
 $$
 
 The third property in the above list is called the triangle inequality for the modulus function.
@@ -140,6 +140,14 @@ The third property in the above list is called the **triangle inequality** for t
 
 #### Remark 1.1
 
+There is an important relation between $$\norm{x}$$, and $$\abs{x^i}$$ for the entries of $$x$$.
+
+$$
+\min_{k = 1, 2,\dots,n} \abs{x^k} \leq \abs{x^k} \leq \norm{x} \leq \sqrt{n}\max_{k = 1, 2,\dots,n} \abs{x^k}.
+$$
+
+**Proof.** (In problem sheet 1)
+
 The properties that the norm function satisfies could be used in an abstract fashion to define more general normed vector spaces. The norm gives us a useful notion of distance between two points in $$\R^n$$.
 
 ### 1.1.3 Convergence of sequences in Euclidean spaces
@@ -167,5 +175,9 @@ x_i = (x_i^1, x_i^2,\dots,x_i^n),\quad x = (x^1, x^2,\dots,x^n),
 $$
 
 then, $$x_i \to x$$ as $$i \to \infty$$ if and only if for all $$k = 1, 2,\dots,n$$, we have $$x_i^k \to x^k$$ as $$i \to \infty$$.
+
+**Proof.**
+
+
 
 
