@@ -43,7 +43,7 @@ $$
 
 and the set of real numbers $$\R$$. The set of real numbers is obtained as the *completion* of the set of $$\Q$$.
 
-On $$\R$$, we have a notation of ordering $$\leq$$, so that we say whether a real number is greater than, less than or equal to another. Moreover, $$\R$$ satisfied the **completeness axiom**, that is, if $$A \subset \mathbb{R}$$ is non-empty and bounded above, then $$A$$ has a least upperbound. The standard notation for the least upper bound of $A$ is $$\sup (A)$$. 
+On $$\R$$, we have a notation of ordering $$\leq$$, so that we say whether a real number is greater than, less than or equal to another. Moreover, $$\R$$ satisfied the **completeness axiom**, that is, if $$A \subset \mathbb{R}$$ is non-empty and bounded above, then $$A$$ has a least upperbound. The standard notation for the least upper bound of $$A$$ is $$\sup (A)$$. 
 
 An important function defined on all real numbers is the modulus function, defined as
 
@@ -132,7 +132,7 @@ The norm function on $$\R^n$$ has the following properties:
 
 - (i) For all $$x \in \R^n$$, we have $$\norm{x} \geq 0$$, with $$\norm{x}=0$$ if and only if $$x=0$$.
   
-- (ii) For all $$x \in \R^n$$ and $$\lambda \in \R$$, we have $$\lambda \norm{x} = \abs{\lambda} \norm{x}$$.
+- (ii) For all $$x \in \R^n$$ and $$\lambda \in \R$$, we have $$\norm{\lambda x} = \abs{\lambda} \norm{x}$$.
   
 - (iii) For all $$x,y \in \R^n$$, we have 
 
