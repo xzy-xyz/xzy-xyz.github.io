@@ -132,9 +132,13 @@ The norm function on $$\R^n$$ has the following properties:
 
 - (i) For all $$x \in \R^n$$, we have $$\norm{x} \geq 0$$, with $$\norm{x}=0$$ if and only if $$x=0$$.
   
-- (ii) For all $$x \in \R^n$$ and $$\lambda \in \R$$, we have $$\norm{\lambda x} = |\lambda|\norm{x}$$.
+- (ii) For all $$x \in \R^n$$ and $$\lambda \in \R$$, we have $$\lambda \norm{x} = \abs{\lambda} \norm{x}$$.
   
-- (iii) For all $$x,y \in \R^n$$, we have $$\norm{x+y} \leq \norm{x} + \norm{y}$$.
+- (iii) For all $$x,y \in \R^n$$, we have 
+
+  $$
+  \norm{x+y} \leq \norm{x} + \norm{y}
+  $$
 
 The third property in the above list is called the **triangle inequality** for the norm function.
 
