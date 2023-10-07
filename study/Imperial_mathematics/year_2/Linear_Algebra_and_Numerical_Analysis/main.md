@@ -7,6 +7,6 @@ layout: simple
 >>
 >><p align="right">-- Irving Kaplansky, In Paul Halmos: Celebrating 50 Years of Mathematics (1991), 88</p>
 >
->>*$\exist$ blackboard page* ....
+>>*$$\exist$$ blackboard page* ....
 >>
 >><p align="right">-- Prof. Martin Liebeck, first lecture at Autumn Term, 2023</p>
