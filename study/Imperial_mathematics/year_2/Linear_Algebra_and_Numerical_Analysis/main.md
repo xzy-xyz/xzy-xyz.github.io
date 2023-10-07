@@ -10,3 +10,5 @@ layout: simple
 >>*$$\exist$$ blackboard page* ....
 >>
 >><p align="right">-- Prof. Martin Liebeck, first lecture at Autumn Term, 2023</p>
+
+#### [Matrix results](/study/Imperial_mathematics/year_2/Linear_Algebra_and_Numerical_Analysis/Part_1)
