@@ -444,14 +444,14 @@ $$
 #### Remark
 
 $$
-\g \phi \codt \vf = \vf \cdot \g \phi = (\vf \cdot \g) \phi
+\g \phi \cdot \vf = \vf \cdot \g \phi = (\vf \cdot \g) \phi
 $$
 
 **Proof**:
 
-- $$\mathrm{(v)}$$
-  
-  $$
+- (v)
+
+    $$
     \begin{aligned}
     \d(\phi \vf) & = \left(\nvi \pa{}{x} + \nvj \pa{}{y} + \nvk \pa{}{z}\right) \cdot \left(\phi A_1 \nvi +\phi A_2 \nvj + \phi A_3 \nvk\right) \\
     & = \pa{\phi A_1}{x} + \pa{\phi A_2}{y} + \pa{\phi A_3}{z} \\
@@ -462,10 +462,12 @@ $$
 
     If we use the **summation convention**, we could write
 
-
     - $$\g \phi = \nve_i \pa{\phi}{x_i}$$
+  
     - $$\d \vf = \pa{A_i}{x_i}$$
+  
     - $$[\g \phi]_i = \pa{\phi}{x_i}$$
+  
     - $$[\cu \vf]_i = \ve_{ijk} \pa{A_k}{x_j}$$
 
 
