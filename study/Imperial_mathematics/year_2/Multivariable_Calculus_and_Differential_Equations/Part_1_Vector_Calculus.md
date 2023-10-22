@@ -376,9 +376,9 @@ $$
 
 $$
 \begin{aligned}
-\operatorname{div} \mathbf{A} & = (\part{}{x}\widehat{\mathbf{i}} + \part{}{y}\widehat{\mathbf{j}} + \part{}{z}\widehat{\mathbf{k}}) \cdot (A_1\widehat{\mathbf{i}} + A_2\widehat{\mathbf{j}} + A_3\widehat{\mathbf{k}}) \\
-& = \part{A_1}{x} + \part{A_2}{y} + \part{A_3}{z} \\
-& = \sum_{i=1}^{3} \part{A_i}{x_i}
+\operatorname{div} \mathbf{A} & = (\frac{\partial}{\partial x}\widehat{\mathbf{i}} + \frac{\partial}{\partial y}\widehat{\mathbf{j}} + \frac{\partial}{\partial z}\widehat{\mathbf{k}}) \cdot (A_1\widehat{\mathbf{i}} + A_2\widehat{\mathbf{j}} + A_3\widehat{\mathbf{k}}) \\
+& = \frac{\partial A_1}{\partial x} + \frac{\partial A_2}{\partial y} + \frac{\partial A_3}{\partial z} \\
+& = \sum_{i=1}^{3} \frac{ \partial A_i}{\partial x_i}
 \end{aligned}
 $$
 
@@ -386,11 +386,11 @@ $$
 \begin{aligned}
 \operatorname{curl} \mathbf{A} & = \left|\begin{array}{ccc}
 \mathbf{i} & \mathbf{j} & \mathbf{k} \\
-\part{}{x} & \part{}{y} & \part{}{z} \\
+\frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\
 A_{1} & A_{2} & A_{3}
 \end{array}\right|\\
-& = \left(\part{A_3}{y} - \part{A_2}{z}\right)\widehat{\mathbf{i}} + \left(\part{A_1}{z} - \part{A_3}{x}\right)\widehat{\mathbf{j}} + \left(\part{A_2}{x} - \part{A_1}{y}\right)\widehat{\mathbf{k}} \\
-& = \sum_{i=1}^{3} \ve_{ijk} \part{A_k}{x_j} \\
+& = \left(\frac{\partial A_3}{\partial y} - \frac{\partial A_2}{\partial z}\right)\widehat{\mathbf{i}} + \left(\frac{\partial A_1}{\partial z} - \frac{\partial A_3}{\partial x}\right)\widehat{\mathbf{j}} + \left(\frac{\partial A_2}{\partial x} - \frac{\partial A_1}{\partial y}\right)\widehat{\mathbf{k}} \\
+& = \sum_{i=1}^{3} \ve_{ijk} \frac{\partial A_k}{\partial x_j} \\
 \end{aligned}
 $$
 
@@ -453,22 +453,22 @@ $$
 
     $$
     \begin{aligned}
-    \d(\phi \vf) & = \left(\nvi \part{}{x} + \nvj \part{}{y} + \nvk \part{}{z}\right) \cdot \left(\phi A_1 \nvi +\phi A_2 \nvj + \phi A_3 \nvk\right) \\
-    & = \part{\phi A_1}{x} + \part{\phi A_2}{y} + \part{\phi A_3}{z} \\
-    & = \phi \left(\part{A_1}{x} + \part{A_2}{y} + \part{A_3}{z}\right) + A_1 \part{\phi}{x} + A_2 \part{\phi}{y} + A_3 \part{\phi}{z} \\
+    \d(\phi \vf) & = \left(\nvi \frac{\partial}{\partial x} + \nvj \frac{\partial}{\partial y} + \nvk \frac{}{z}\right) \cdot \left(\phi A_1 \nvi +\phi A_2 \nvj + \phi A_3 \nvk\right) \\
+    & = \frac{\partial \phi A_1}{\partial x} + \frac{\partial \phi A_2}{\partial y} + \frac{\partial \phi A_3}{\partial z} \\
+    & = \phi \left(\frac{\partial A_1}{\partial x} + \frac{\partial A_2}{\partial y} + \frac{\partial A_3}{\partial z}\right) + A_1 \frac{\partial \phi}{\partial x} + A_2 \frac{\partial \phi}{\partial y} + A_3 \frac{\partial \phi}{\partial z} \\
     & = \phi \d \vf + \g \phi \cdot \vf \\
     \end{aligned}
     $$
 
     If we use the **summation convention**, we could write
 
-    - $$\g \phi = \nve_i \part{\phi}{x_i}$$
+    - $$\g \phi = \nve_i \frac{\partial \phi}{\partial x_i}$$
   
-    - $$\d \vf = \part{A_i}{x_i}$$
+    - $$\d \vf = \frac{\partial A_i}{\partial x_i}$$
   
-    - $$[\g \phi]_i = \part{\phi}{x_i}$$
+    - $$[\g \phi]_i = \frac{\partial \phi}{\partial x_i}$$
   
-    - $$[\cu \vf]_i = \ve_{ijk} \part{A_k}{x_j}$$
+    - $$[\cu \vf]_i = \ve_{ijk} \frac{\partial A_k}{\partial x_j}$$
 
 
     where $$[\:\;]_i$$ denotes the $$i$$ th component of the vector.
@@ -477,8 +477,8 @@ $$
 
     $$
     \begin{aligned}
-    \d (\phi \vf) & = \part{\phi A_i}{x_i} \\
-    & = \phi \part{A_i}{x_i} + A_i \part{\phi}{x_i} \\
+    \d (\phi \vf) & = \frac{\partial \phi A_i}{\partial x_i} \\
+    & = \phi \frac{\partial A_i}{\partial x_i} + A_i \frac{\partial \phi}{\partial x_i} \\
     & = \phi \d \vf + (\vf \cdot \g) \phi \\
     \end{aligned}
     $$
