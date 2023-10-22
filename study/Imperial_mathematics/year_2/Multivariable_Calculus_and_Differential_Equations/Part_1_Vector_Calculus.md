@@ -157,14 +157,14 @@ If we use the notation that we introduce before, we could write
 $$
 \begin{aligned}
 a_{2} b_{3}-a_{3} b_{2} & = \ve_{123}a_2b_3 + \ve_{132}a_3b_2 \\
-                     & = \ve_{ijk}a_jb_k \\
+& = \ve_{ijk}a_jb_k \\
 \end{aligned}
 $$
 
 since $$\varepsilon_{123}=1, \varepsilon_{132}=-1$$, and $$\varepsilon_{1 i j}=0$$ for all other $$i$$ and $$j$$. In general we can write the $$i$$ th component of $$a \times b$$ as
 
 $$
-[a \times b]_{i} = \ve_{1jk}a_jb_k
+[a \times b]_{i} = \ve_{ijk}a_jb_k
 $$
 
 ### 1.1.5 Scalar product
@@ -187,7 +187,7 @@ This is the quantity
 
 $$
 \begin{array}{r}
-\va \cdot (\vb) \times \vc & = a_i [\vb \times \vc]_i = a_i \ve_{ijk}b_jc_k \\
+\va \cdot (\vb \times \vc) & = a_i [\vb \times \vc]_i = a_i \ve_{ijk}b_jc_k \\
 & = \ve_{ijk}a_ib_jc_k \\
 \end{array}
 $$
@@ -375,7 +375,7 @@ $$
 
 $$
 \begin{aligned}
-\operatorname{div} \mathbf{A} & = (\frac{\partial}{\partial x}\widehat{\mathbf{i}} + \frac{\partial}{\partial y}\widehat{\mathbf{j}} + \frac{\partial}{\partial z}\widehat{\mathbf{k}}) \cdot (A_1\widehat{\mathbf{i}} + A_2\widehat{\mathbf{j}} + A_3\widehat{\mathbf{k}}) \\
+\operatorname{div} \mathbf{A} & = \left(\frac{\partial}{\partial x}\widehat{\mathbf{i}} + \frac{\partial}{\partial y}\widehat{\mathbf{j}} + \frac{\partial}{\partial z}\widehat{\mathbf{k}}\right) \cdot (A_1\widehat{\mathbf{i}} + A_2\widehat{\mathbf{j}} + A_3\widehat{\mathbf{k}}) \\
 & = \frac{\partial A_1}{\partial x} + \frac{\partial A_2}{\partial y} + \frac{\partial A_3}{\partial z} \\
 & = \sum_{i=1}^{3} \frac{ \partial A_i}{\partial x_i}
 \end{aligned}
@@ -461,26 +461,34 @@ $$
 
     If we use the **summation convention**, we could write
 
-    - $$\g \phi = \nve_i \frac{\partial \phi}{\partial x_i}$$
+$$
+\begin{aligned}
+
+\g \phi & = \nve_i \frac{\partial \phi}{\partial x_i}\\
   
-    - $$\d \vf = \frac{\partial A_i}{\partial x_i}$$
+\d \vf & = \frac{\partial A_i}{\partial x_i}\\
   
-    - $$[\g \phi]_i = \frac{\partial \phi}{\partial x_i}$$
+[\g \phi]_i & = \frac{\partial \phi}{\partial x_i}\\
   
-    - $$[\cu \vf]_i = \ve_{ijk} \frac{\partial A_k}{\partial x_j}$$
+[\cu \vf]_i & = \ve_{ijk} \frac{\partial A_k}{\partial x_j}
+
+\end{aligned}
+$$
 
 
-    where $$[\:\;]_i$$ denotes the $$i$$ th component of the vector.
 
-    Therefore, 
 
-    $$
+where $$[\:\;]_i$$ denotes the $$i$$ th component of the vector.
+
+Therefore, 
+
+$$
     \begin{aligned}
     \d (\phi \vf) & = \frac{\partial \phi A_i}{\partial x_i} \\
     & = \phi \frac{\partial A_i}{\partial x_i} + A_i \frac{\partial \phi}{\partial x_i} \\
     & = \phi \d \vf + (\vf \cdot \g) \phi \\
     \end{aligned}
-    $$
+$$
 
 #### Other important result
 
@@ -516,18 +524,12 @@ $$
 \end{aligned}
 $$
 
-For a vector field $$\vf$$, we have
+For a vector field $$\vf$$, we use the same definition as above:
 
 $$
-\begin{aligned}
-\nabla^{2} \mathbf{A} & = \d(\g \vf) \\
-& = \left(\frac{\partial}{\partial x} \nvi + \frac{\partial}{\partial y} \nvj + \frac{\partial}{\partial z} \nvk\right) \cdot \left(\frac{\partial A_1}{\partial x} \nvi + \frac{\partial A_2}{\partial y} \nvj + \frac{\partial A_3}{\partial z} \nvk\right) \\
-& = \frac{\partial^{2} A_{1}}{\partial x^{2}}+\frac{\partial^{2} A_{2}}{\partial y^{2}}+\frac{\partial^{2} A_{3}}{\partial z^{2}} \\
-& = \g^2 \vf \\
-& = \frac{\partial^2 A_i}{\partial x_i \partial x_i}\\
-& = \frac{\partial^2 A_i}{\partial x_i^2}
-\end{aligned}
+\g^2 \vf = \frac{\partial^2 \vf}{\partial x^2} + \frac{\partial^2 \vf}{\partial y^2} + \frac{\partial^2 \vf}{\partial z^2} = \frac{\partial^2 \vf}{\partial x_i^2}
 $$
+
 
 ### 1.4.3 The curl of a gradient
 
