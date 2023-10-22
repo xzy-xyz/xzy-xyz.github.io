@@ -11,7 +11,6 @@ $$\gdef\Q{\mathbb{Q}}$$
 $$\gdef\F{\mathcal{F}}$$
 $$\gdef\abs#1{\left| #1 \right|}$$
 $$\gdef\pap#1{\frac{\partial \phi }{\partial #1}}$$
-$$\gdef\part#1 #2{\frac{\partial #1 }{\partial #2}}$$
 $$\gdef\va{\mathbf{a}}$$
 $$\gdef\vb{\mathbf{b}}$$
 $$\gdef\vc{\mathbf{c}}$$
@@ -158,7 +157,7 @@ If we use the notation that we introduce before, we could write
 $$
 \begin{aligned}
 a_{2} b_{3}-a_{3} b_{2} & = \ve_{123}a_2b_3 + \ve_{132}a_3b_2 \\
-                     & = \ve_{1jk}a_jb_k \\
+& = \ve_{ijk}a_jb_k \\
 \end{aligned}
 $$
 
