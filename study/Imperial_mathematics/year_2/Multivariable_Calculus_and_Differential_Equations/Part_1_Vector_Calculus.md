@@ -3,6 +3,8 @@ title: Vector Calculus
 layout: simple
 ---
 
+#### Based on the notes and lectures by [Dr. Andrew G Walton](https://www.ma.ic.ac.uk/~agw/).
+
 $$\gdef\R{\mathbb{R}}$$
 $$\gdef\C{\mathbb{C}}$$
 $$\gdef\Z{\mathbb{Z}}$$ 
@@ -26,7 +28,7 @@ $$\gdef\cu{\operatorname{curl}}$$
 $$\gdef\g{\nabla}$$
 $$\gdef\vf{\mathbf{A}}$$
 
-For this part, we only consider less or equal to three dimensions and assume that $$\mathbf{A}$$ is a vector field and $$\phi$$ is a scalar field.
+#### For the following , we only consider less or equal to three dimensions and assume that $$\mathbf{A}$$ is a vector field and $$\phi$$ is a scalar field.
 
 ## 1.1 Preliminarry ideas and some revision of vectors
 
