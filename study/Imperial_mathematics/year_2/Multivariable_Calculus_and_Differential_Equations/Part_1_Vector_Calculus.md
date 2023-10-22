@@ -157,7 +157,7 @@ If we use the notation that we introduce before, we could write
 $$
 \begin{aligned}
 a_{2} b_{3}-a_{3} b_{2} & = \ve_{123}a_2b_3 + \ve_{132}a_3b_2 \\
-& = \ve_{ijk}a_jb_k \\
+                     & = \ve_{ijk}a_jb_k \\
 \end{aligned}
 $$
 
@@ -501,20 +501,69 @@ $$
 
 The **Laplacian** is the divergence of the gradient:
 
+
+For a scalar field $$\phi$$, we have
+
+
 $$
-\nabla^{2} \mathbf{A} \equiv \d(\g \phi) = \frac{\partial^{2} \mathbf{A}}{\partial x^{2}}+\frac{\partial^{2} \mathbf{A}}{\partial y^{2}}+\frac{\partial^{2} \mathbf{A}}{\partial z^{2}}
+\begin{aligned}
+\nabla^{2} \phi & = \d(\g \phi) \\
+& = \left(\frac{\partial}{\partial x} \nvi + \frac{\partial}{\partial y} \nvj + \frac{\partial}{\partial z} \nvk\right) \cdot \left(\frac{\partial \phi}{\partial x} \nvi + \frac{\partial \phi}{\partial y} \nvj + \frac{\partial \phi}{\partial z} \nvk\right) \\
+& = \frac{\partial^{2} \phi}{\partial x^{2}}+\frac{\partial^{2} \phi}{\partial y^{2}}+\frac{\partial^{2} \phi}{\partial z^{2}} \\
+& = \g^2 \phi \\
+& = \frac{\partial^2 \phi}{\partial x_i \partial x_i}\\
+& = \frac{\partial^2 \phi}{\partial x_i^2} 
+\end{aligned}
+$$
+
+For a vector field $$\vf$$, we have
+
+$$
+\begin{aligned}
+\nabla^{2} \mathbf{A} & = \d(\g \vf) \\
+& = \left(\frac{\partial}{\partial x} \nvi + \frac{\partial}{\partial y} \nvj + \frac{\partial}{\partial z} \nvk\right) \cdot \left(\frac{\partial A_1}{\partial x} \nvi + \frac{\partial A_2}{\partial y} \nvj + \frac{\partial A_3}{\partial z} \nvk\right) \\
+& = \frac{\partial^{2} A_{1}}{\partial x^{2}}+\frac{\partial^{2} A_{2}}{\partial y^{2}}+\frac{\partial^{2} A_{3}}{\partial z^{2}} \\
+& = \g^2 \vf \\
+& = \frac{\partial^2 A_i}{\partial x_i \partial x_i}\\
+& = \frac{\partial^2 A_i}{\partial x_i^2}
+\end{aligned}
 $$
 
 ### 1.4.3 The curl of a gradient
 
 $$
-\operatorname{curl}(\nabla \phi)=
+\operatorname{curl}(\nabla \phi) = 0
+$$
+
+**Proof**:
+
+$$
+\begin{aligned}
+[\operatorname{curl}(\nabla \phi)]_i & = \ve_{ijk} \frac{\partial}{\partial x_j} (\g \phi)_k \\
+& = \ve_{ijk} \frac{\partial}{\partial x_j} \frac{\partial \phi}{\partial x_k} \\
+& = \frac{1}{2} \ve_{ijk} \frac{\partial}{\partial x_j} \frac{\partial \phi}{\partial x_k} + \frac{1}{2} \ve_{ikj} \frac{\partial}{\partial x_k} \frac{\partial \phi}{\partial x_j} \\
+& = \frac{1}{2} \ve_{ijk} \frac{\partial}{\partial x_j} \frac{\partial \phi}{\partial x_k} - \frac{1}{2} \ve_{ijk} \frac{\partial}{\partial x_k} \frac{\partial \phi}{\partial x_j} \\
+& = \frac{1}{2} \ve_{ijk} \left(\frac{\partial}{\partial x_j} \frac{\partial \phi}{\partial x_k} - \frac{\partial}{\partial x_j} \frac{\partial \phi}{\partial x_k}\right) \\
+& = 0 \\
+\end{aligned}
 $$
 
 ### 1.4.4 The divergence of a curl
 
 $$
-\operatorname{div}(\operatorname{curl} \mathbf{A})=
+\operatorname{div}(\operatorname{curl} \mathbf{A}) = 0
+$$
+
+**Proof**:
+
+$$
+\begin{aligned}
+\d = (\cu \vf) & = \frac{\partial }{\partial x_i}(\cu \vf)_i\\
+& = \ve_{ijk} \frac{\partial}{\partial x_i} \frac{\partial A_k}{\partial x_j} \\
+& = \ve_{ijk} \frac{\partial}{\partial x_i} \frac{\partial A_k}{\partial x_j} + \ve_{jik} \frac{\partial}{\partial x_j} \frac{\partial A_k}{\partial x_i} \\
+& = \ve_{ijk} \frac{\partial}{\partial x_i} \frac{\partial A_k}{\partial x_j} - \ve_{ijk} \frac{\partial}{\partial x_i} \frac{\partial A_k}{\partial x_j} \\
+& = 0 \\
+\end{aligned}
 $$
 
 ### 1.4.5 The curl of a curl
@@ -524,6 +573,17 @@ $$
 $$
 
 **Proof**:
+
+$$
+\begin{aligned}
+[\operatorname{curl}(\operatorname{curl} \mathbf{A})]_i & = \ve_{ijk} \frac{\partial}{\partial x_j} (\cu \vf)_k \\
+& = \ve_{ijk} \frac{\partial}{\partial x_j}\left(\ve_{klm} \frac{\partial A_m}{\partial x_l}\right) \\
+& = (\delta_{il} \delta_{jm} - \delta_{im}\delta_{jl}) (\frac{\partial}{\partial x_j} \frac{\partial A_j}{\partial x_l}) \\
+& = \frac{\partial^2 A_j}{\partial x_j \partial x_i} - \frac{\partial^2 A_i}{\partial x_j \partial x_j} \\
+& = \frac{\partial}{\partial x_i}\left(\frac{\partial \vf_j}{\partial x_j}\right) - \frac{\partial^2 A_i}{\partial x_j^2} \\
+& = [\g(\d \vf)]_i - [\g^2 \vf]_i \\
+\end{aligned}
+$$
 
 ### 1.4.6. Scalar and vector fields
 
@@ -540,25 +600,44 @@ If $$\mathbf{A}$$ is a vector field such that $$\d \vf = 0$$, then $$\mathbf{A}$
 $$
 \begin{aligned}
 \mathbf{r} & =x \mathbf{i}+y \mathbf{j}+z \mathbf{k} \\
-\operatorname{div} \mathbf{r} & = \\
-\operatorname{curl} \mathbf{r} & = \\
+\operatorname{div} \mathbf{r} & = 3\\
+\operatorname{curl} \mathbf{r} & = 0\\
 |\mathbf{r}| & =r=\left(x^{2}+y^{2}+z^{2}\right)^{1 / 2} \\
 \nabla r & =\nabla\left(x^{2}+y^{2}+z^{2}\right)^{1 / 2} \\
-& = \\
-& = \\
-& =
+& = \left(\frac{\partial}{\partial x}\nvi + \frac{\partial}{\partial y }\nvj + \frac{\partial}{\partial z}\nvk\right) \cdot \left(\left(x^{2}+y^{2}+z^{2}\right)^{1 / 2}\right) \\
+& = \frac{x}{\left(x^{2}+y^{2}+z^{2}\right)^{1 / 2}} \nvi + \frac{y}{\left(x^{2}+y^{2}+z^{2}\right)^{1 / 2}} \nvj + \frac{z}{\left(x^{2}+y^{2}+z^{2}\right)^{1 / 2}} \nvk \\
+& = (x \nvi + y \nvj + z \nvk) \frac{1}{\left(x^{2}+y^{2}+z^{2}\right)^{1 / 2}} \\
+& = \frac{\mathbf{r}}{r} \\
+& = \widehat{\mathbf{r}} \\
 \end{aligned}
 $$
 
+### Example
 
+Calculate
 
+$$
+\d^2 \left(\frac{1}{r}\right)
+$$
 
+**Solution**:
 
+$$
+\begin{aligned}
+\d \left(\frac{1}{r}\right) & = \d (x^2 + y^2 + z^2)^{-1/2} \\
+& = \left(\frac{\partial}{\partial x}\nvi + \frac{\partial}{\partial y}\nvj + \frac{\partial}{\partial z}\nvk\right) \cdot \left(\frac{1}{\left(x^{2}+y^{2}+z^{2}\right)^{1 / 2}}\right) \\
+& = - (x \nvi + y \nvj + z \nvk) \frac{1}{\left(x^{2}+y^{2}+z^{2}\right)^{3 / 2}} \\
+& = - \frac{\mathbf{r}}{r^3} \\
+\end{aligned}
+$$
 
+$$
+\begin{aligned}
+\d^2 \left(\frac{1}{r}\right) & = - \left(\frac{\partial}{\partial x}\left(\frac{x}{(x^2+y^2+z^2)^{\frac{3}{2}}}\right) + \frac{\partial}{\partial y}\left(\frac{y}{(x^2+y^2+z^2)^{\frac{3}{2}}}\right) + \frac{\partial}{\partial z}\left(\frac{z}{(x^2+y^2+z^2)^{\frac{3}{2}}}\right)\right)  \\
+& = -\frac{3}{(x^2 + y^2 z^2)^{\frac{3}{2}}} + \left(\frac{3x^2}{(x^2+y^2+z^2)^{\frac{5}{2}}} + \frac{3y^2}{(x^2+y^2+z^2)^{\frac{5}{2}}} + \frac{3z^2}{(x^2+y^2+z^2)^{\frac{5}{2}}}\right) \\
+& = -\frac{3}{(x^2 + y^2 z^2)^{\frac{3}{2}}} + \frac{3}{(x^2+y^2+z^2)^{\frac{3}{2}}} \\
+& = 0 \\
+\end{aligned}
+$$
 
-
-
-
-
-
-
+Therefore, $$\d^2 (1/r) = 0$$, $$\frac{1}{r}$$ satisfies the **Laplace equation**: $$\d^2 \phi = 0$$.
