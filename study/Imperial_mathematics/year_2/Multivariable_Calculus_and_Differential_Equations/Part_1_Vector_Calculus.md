@@ -621,14 +621,14 @@ $$
 Calculate
 
 $$
-\d^2 \left(\frac{1}{r}\right)
+\g^2 \left(\frac{1}{r}\right)
 $$
 
 **Solution**:
 
 $$
 \begin{aligned}
-\d \left(\frac{1}{r}\right) & = \d (x^2 + y^2 + z^2)^{-1/2} \\
+\g \left(\frac{1}{r}\right) & = \d (x^2 + y^2 + z^2)^{-1/2} \\
 & = \left(\frac{\partial}{\partial x}\nvi + \frac{\partial}{\partial y}\nvj + \frac{\partial}{\partial z}\nvk\right) \cdot \left(\frac{1}{\left(x^{2}+y^{2}+z^{2}\right)^{1 / 2}}\right) \\
 & = - (x \nvi + y \nvj + z \nvk) \frac{1}{\left(x^{2}+y^{2}+z^{2}\right)^{3 / 2}} \\
 & = - \frac{\mathbf{r}}{r^3} \\
@@ -637,11 +637,11 @@ $$
 
 $$
 \begin{aligned}
-\d^2 \left(\frac{1}{r}\right) & = - \left(\frac{\partial}{\partial x}\left(\frac{x}{(x^2+y^2+z^2)^{\frac{3}{2}}}\right) + \frac{\partial}{\partial y}\left(\frac{y}{(x^2+y^2+z^2)^{\frac{3}{2}}}\right) + \frac{\partial}{\partial z}\left(\frac{z}{(x^2+y^2+z^2)^{\frac{3}{2}}}\right)\right)  \\
+\g^2 \left(\frac{1}{r}\right) & = - \left(\frac{\partial}{\partial x}\left(\frac{x}{(x^2+y^2+z^2)^{\frac{3}{2}}}\right) + \frac{\partial}{\partial y}\left(\frac{y}{(x^2+y^2+z^2)^{\frac{3}{2}}}\right) + \frac{\partial}{\partial z}\left(\frac{z}{(x^2+y^2+z^2)^{\frac{3}{2}}}\right)\right)  \\
 & = -\frac{3}{(x^2 + y^2 z^2)^{\frac{3}{2}}} + \left(\frac{3x^2}{(x^2+y^2+z^2)^{\frac{5}{2}}} + \frac{3y^2}{(x^2+y^2+z^2)^{\frac{5}{2}}} + \frac{3z^2}{(x^2+y^2+z^2)^{\frac{5}{2}}}\right) \\
 & = -\frac{3}{(x^2 + y^2 z^2)^{\frac{3}{2}}} + \frac{3}{(x^2+y^2+z^2)^{\frac{3}{2}}} \\
 & = 0 \\
 \end{aligned}
 $$
 
-Therefore, $$\d^2 (1/r) = 0$$, $$\frac{1}{r}$$ satisfies the **Laplace equation**: $$\d^2 \phi = 0$$.
+Therefore, $$\g^2 (1/r) = 0$$, $$\frac{1}{r}$$ satisfies the **Laplace equation**: $$\g^2 \phi = 0$$.
