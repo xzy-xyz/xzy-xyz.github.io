@@ -10,10 +10,12 @@ $$\gdef\N{\mathbb{N}}$$
 $$\gdef\Q{\mathbb{Q}}$$
 $$\gdef\F{\mathcal{F}}$$
 $$\gdef\iso{\overset{\sim}{=}}$$
+$$\gdef\ke{\operatorname{Ker}}$$
+$$\gdef\im{\operatorname{Im}}$$
 
-#### Based on the notes and lectures by [Professor Alexei Skorobogatov](https://www.ma.ic.ac.uk/~anskor/)
+#### *Based on the notes and lectures by [Professor Alexei Skorobogatov](https://www.ma.ic.ac.uk/~anskor/)*
 
-##### For the following we assume that $$G$$ and $$H$$ are groups, $$f$$ is a function, $$f: G \rightarrow H$$ and $$e$$ is the unit element in a group.
+> For the following we assume that $$G$$ and $$H$$ are groups, $$f$$ is a function, $$f: G \rightarrow H$$ and $$e$$ is the unit element in a group.
 
 ## 1. Homomorphisms and normal subgroups
 
@@ -94,7 +96,7 @@ $$
     $$
     sgn(\sigma \tau) = \begin{cases}
         1 & \text{if } \sigma \tau \text{ are both even or both odd} \\
-        1 & \text{if one of } \sigma \tau \text{ is even and the other is odd} 
+        -1 & \text{if one of } \sigma \tau \text{ is even and the other is odd} 
     \end{cases}
     $$
 
@@ -330,9 +332,364 @@ Let $$G$$ be a group and $$H$$ be a subgroup of $$G$$. We say that $$H$$ is **st
 
 Let $$G$$ be a group. A subgroup $$S \subset G$$ is called **normal** if it is stable under the conjugation by any element of $$G$$.
 
-#### Definition 1.12 (Simple group)
+
+#### Definition 1.12 (Image and kernel of a homomorphism)
+
+To a homomorphism $$f: G \rightarrow H$$ we associate its image
+
+$$
+\operatorname{Im}(f)=f(G)=\{f(x) \mid x \in G\} \subset H
+$$
+
+and its kernel
+
+$$
+\operatorname{Ker}(f)=\left\{x \in G \mid f(x)=e_{H}\right\}
+$$
+
+#### Lemma 1.13 (A homomorphism is injective if and only if its kernel is trivial)
+
+Let $$f: G \rightarrow H$$ be a homomorphism. Then $$f$$ is an injective if and only if $$\operatorname{Ker}(f)=\{e_{G}\}$$.
+
+**Proof**:
+
+$$\Rightarrow$$: Since $$f$$ is homomorphism, then $$f(e_G) = e_H$$, so $$e_G \in \ke(f)$$. Since $$f$$ is injective, then $$|\ke(f)| \leq 1$$. Therefore, $$\ke(f) = \{e_G\}$$.
+
+$$\Leftarrow$$: Assume $$\ke(f) = \{e_G\}$$ and $$f(g_1) = f(g_2)$$, then we have:
+
+$$
+f(g_1) = f(g_2) \Rightarrow f(g_1) f(g_2)^{-1} = e_H \Rightarrow f(g_1 g_2^{-1}) = e_H \Rightarrow g_1 g_2^{-1} \in \ke(f) \Rightarrow g_1 g_2^{-1} = e_G \Rightarrow g_1 = g_2
+$$
+
+
+#### Proposition 1.14 (Kernel of a homomorphism is a normal subgroup)
+
+Let $$f: G \rightarrow H$$ be a homomorphism of a group. Then $$\operatorname{Im}(f)$$ is a subgroup of $$H$$ and $$\operatorname{Ker}(f)$$ is a subgroup of $$G$$. Moreover, $$\operatorname{Ker}(f)$$ is a normal subgroup of $$G$$.
+
+**Proof**:
+
+1. (Image is subgroup) To prove this, we check the defintion of subgroups.  
+
+    1. (Identity) Since $$f$$ is a homomorphism, then $$f(e_G) = e_H$$. Therefore, $$e_H \in \operatorname{Im}(f)$$.
+
+    2. (Closure) Let $$h_1, h_2 \in \operatorname{Im}(f)$$ be arbitrary, then there exists $$g_1, g_2 \in G$$ such that $$f(g_1) = h_1$$ and $$f(g_2) = h_2$$. Since $$f$$ is a homomorphism, then we have:
+
+        $$
+        f(g_1 g_2) = f(g_1) f(g_2) = h_1 h_2
+        $$
+
+        Therefore, $$h_1 h_2 \in \operatorname{Im}(f)$$.
+
+    3. (Inverse) Let $$h \in \operatorname{Im}(f)$$ be arbitrary, then there exists $$g \in G$$ such that $$f(g) = h$$. Since $$f$$ is a homomorphism, then we have:
+
+        $$
+        f(g^{-1}) = f(g)^{-1} = h^{-1}
+        $$
+
+        Therefore, $$h^{-1} \in \operatorname{Im}(f)$$.
+
+2. (Kernel is subgroup)
+
+    1. (Identity) Since $$f$$ is a homomorphism, then $$f(e_G) = e_H$$. Therefore, $$e_G \in \operatorname{Ker}(f)$$.
+
+    2. (Closure) Let $$g_1, g_2 \in \operatorname{Ker}(f)$$ be arbitrary, then we have:
+
+        $$
+        f(g_1 g_2) = f(g_1) f(g_2) = e_H e_H = e_H
+        $$
+
+        Therefore, $$g_1 g_2 \in \operatorname{Ker}(f)$$.
+
+    3. (Inverse) Let $$g \in \operatorname{Ker}(f)$$ be arbitrary, then we have:
+
+        $$
+        f(g^{-1}) = f(g)^{-1} = e_H^{-1} = e_H
+        $$
+
+        Therefore, $$g^{-1} \in \operatorname{Ker}(f)$$.
+
+3. (Kernal is normal)
+
+    Assume $$x \in \ke(f)$$ be arbitrary and $$g \in G$$ be any element, then we have:
+
+    $$
+    f(g x g^{-1}) = f(g) f(x) f(g^{-1}) = f(g) e_H f(g^{-1}) = f(g) f(g^{-1}) = f(g g^{-1}) = f(e_G) = e_H
+    $$
+
+    then $$g x g^{-1} \in \ke(f)$$. Therefore, $$\ke(f)$$ is a normal subgroup of $$G$$.
+
+#### Definition 1.15 (Simple group)
 
 A group $$G$$ is called **simple** if it has no normal subgroups other than $$\{e\}$$ and $$G$$.
+
+#### Examples
+
+1. If $$p$$ is a prime number, then the cyclic group $$C_p$$ is a simple group.
+
+    **Proof**:
+
+    Assume $$H$$ is a normal subgroup of $$C_p$$, then $$H$$ is a subgroup of $$C_p$$ and $$H \neq \{e\}$$ and $$H \neq C_p$$. Since $$C_p$$ is a cyclic group, then $$H = \langle a^k \rangle$$ for some $$k \in \{1, 2, ..., p-1\}$$. Since $$H$$ is a normal subgroup of $$C_p$$, then for any $$g \in C_p$$, we have $$g H g^{-1} = H$$. Therefore, we have:
+
+    $$
+    g H g^{-1} = \{g h g^{-1} | h \in H\} = \{g a^k g^{-1} | k \in \{1, 2, ..., p-1\}\} = \{a^k | k \in \{1, 2, ..., p-1\}\} = H
+    $$
+
+    which is a contradiction. Therefore, $$C_p$$ is a simple group.
+
+    Actually, there is a strong result that every cyclic group with prime order has no subgroup other than $$\{e\}$$ and itself.
+
+    **Proof**:
+
+    Assume $$H$$ is a subgroup of $$C_p$$ and $$H \neq \{e\}$$ and $$H \neq C_p$$. Since $$C_p$$ is a cyclic group, then $$H = \langle a^k \rangle$$ for some $$k \in \{1, 2, ..., p\}$$. Since $$H \neq \{e\}$$, then $$k \neq 1$$. Since $$H \neq C_p$$, then $$k \neq p$$. Therefore, $$k$$ is a proper divisor of $$p$$. Since $$p$$ is a prime number, then $$p$$ has no proper divisors. Therefore, $$H$$ does not exist.
+
+
+2. If $$G$$ is Abelian, then any subgroup of $$G$$ is simple.
+
+   **Proof**:
+
+   Assume $$H$$ is a subgroup of $$G$$ and let $$h \in H$$ and $$g \in G$$ be arbitrary. Since $$G$$ is Abelian, then we have:
+
+   $$
+   g h g^{-1} = g g^{-1} h = h \in H
+    $$
+
+    Therefore, $$H$$ is a normal subgroup of $$G$$. Since $$G$$ is Abelian, then $$H$$ is a subgroup of $$G$$ and $$H \neq \{e\}$$ and $$H \neq G$$. Therefore, $$H$$ is a simple group.
+
+3. Consider the symmetric groups $$S_3$$, and let $$G =\{e, (1 2) \}\subset S_3$$. It is clearly that $$G$$ is a subgroup of $$S_3$$. But $$G$$ is not a normal subgroup of $$G$$.
+
+$$
+(13) (12) (13) = (13) (12) (13) = (23) \notin G
+$$
+
+#### Lemma 1.16 (Left coset and right coset equal means normal subgroup)
+
+If $$H \subset G$$ is a subgroup of $$G$$, and $$g H = H g$$ for every $$g \in G$$, then $$H$$ is a normal subgroup of $$G$$.
+
+**Proof**:
+
+Let $$h \in H$$ and $$g \in G$$ be arbitrary, since the left coset and right coset are equal, then we have:
+
+$$
+g h = h g
+$$
+
+We multiply both sides by $$g^{-1}$$ on the right, then we have:
+
+$$
+g h g^{-1} = h
+$$
+
+Therefore, $$H$$ is a normal subgroup of $$G$$.
+
+#### Definition 1.17 (The product of left cosets of a normal subgroup)
+
+Assume $$N$$ is a normal subgroup of $$G$$ and let $$g_1, g_2 \in G$$, then we define a group structure on the set $$G / N$$ of left cosets of $$N$$ in $$G$$ by setting
+
+$$
+(g_1N)(g_2N) = \{ab| a \in g_1N, b\in g_2 N\}
+$$
+
+which is the set of all the products of an element from $$g_1N$$ and an element from $$g_2N$$.
+
+#### Lemma 1.18
+
+Let $$N$$ be a normal subgroup of $$G$$. For any $$g_{1}, g_{2} \in G$$ we have
+
+$$
+(g_1N)(g_2 N) = g_1g_2N
+$$
+
+**Proof**:
+
+Let $$x, y \in N$$ be arbitrary, then $$(g_1 x)(g_2 y) = g_1(g_2 g_2^{-1}xg_2)y$$. Since $$N$$ is a normal subgroup of $$G$$, then $$g_2^{-1}xg_2 \in N$$. Therefore, we could find a $$z \in N$$ such that $$g_2^{-1}xg_2 = z$$. Therefore, we have:
+
+$$
+(g_1x) (g_2y) = g_1(g_2 g_2^{-1}xg_2)y = g_1 g_2 z y
+$$
+
+If we set $$y = e_G$$, then the proof is done.
+
+#### Definition 1.19 (Quotient group)
+
+Let $$N$$ be a normal subgroup of $$G$$, then the set of all the left cosets of $$N$$ in $$G$$ is denoted by $$G / N = \{gN | g \in G\}$$ and is called the **quotient group** of $$G$$ by $$N$$. The group law on $$G / N$$ is given by $$(g_1 N)(g_2 N) = g_1 g_2 N$$.
+
+We show that the quotient group is well-defined.
+
+1. (Closure) Let $$g_1, g_2 \in G$$ be arbitrary, then we have:
+
+    $$
+    (g_1 N)(g_2 N) = g_1 g_2 N
+    $$
+
+    Since $$N$$ is a normal subgroup of $$G$$, then $$g_1 g_2 \in G$$. Therefore, $$g_1 g_2 N \in G / N$$.
+
+2. (Associativity) Since $$G$$ is a group, then the product of two elements in $$G$$ is associative. Therefore, the product of two elements in $$G / N$$ is associative.
+
+3. (Unit element) Since $$N$$ is a normal subgroup of $$G$$, then $$e_G \in N$$. Therefore, $$e_G N = N$$ is the unit element of $$G / N$$.
+
+4. (Inverse) Let $$gN \in G/N$$ be arbitrary, since $$N$$ is a normal subgroup. The inverse of $$gN$$ is $$g^{-1}N$$ .i.e.
+
+$$
+(gN)(g^{-1}N) = g g^{-1} N = e_G N
+$$
+
+
+#### Proposition 1.20
+
+Let $$N$$ be a normal subgroup of $$G$$. The function $$f: G \rightarrow G / N$$ given by $$g \mapsto g N$$ is a surjective homomorphism with kernel $$\operatorname{Ker}(f)=N$$.
+
+**Proof**:
+
+1. (Homomorphism) Let $$g_1, g_2 \in G$$ be arbitrary, then we have:
+
+    $$
+    f(g_1 g_2) = g_1 g_2 N = (g_1 N)(g_2 N) = f(g_1) f(g_2)
+    $$
+
+    Therefore, $$f$$ is a homomorphism.
+
+2. The surjectivity of $$f$$ is obvious.
+
+3. (Kernel) Let $$g \in \ke(f)$$ be arbitrary, then we have:
+
+    $$
+    f(g) = g N = N \Rightarrow g \in N
+    $$
+
+    Therefore, $$\ke(f) = N$$.
+
+#### Theorem 1.21 (First isomorphism theorem)
+
+Let $$f: G \rightarrow H$$ be a homomorphism. The map $$\phi:g \operatorname{Ker}(f) \mapsto f(g)$$ is an isomorphism of groups
+
+$$
+G / \operatorname{Ker}(f) \stackrel{\sim}{\longrightarrow} f(G) .
+$$
+
+and 
+
+$$
+G/ \ke(f) \iso \im(f)
+$$
+
+**Proof**:
+
+Since $$\ke(f)$$ is a normal subgroup, then $$g\ke(f)$$ is a group.
+
+
+Next, we check $$\phi$$ is isomorphism.
+
+1. (Homomorphism) Let $$g_1 \ke(f)$$ and $$g_2\ke(f) \in G/\ke(f)$$ be arbitrary. Then we
+
+    $$
+    \phi(g_1\ke(f)g_2\ke(f)) = \phi(g_1g_2\ke(f)) = f(g_1g_2) = f(g_1)f(g_2) = \phi(g_1\ke(f))\phi(g_2\ke(f))
+    $$
+
+2. (Bijectivity)
+
+    1. (Surjective) The surjectivity of $$\phi$$ is obvious.
+
+    2. (Injective) It we could show that the $$\ke(\phi) = \{e_{G/\ke(f)}\}$$, then $$\phi$$ is injective.
+
+        Let $$g \in \ke(\phi)$$ be arbitrary, then we have:
+
+        $$
+        \phi(g) = f(g) = e_H
+        $$
+
+        Therefore, $$g \in \ke(f)$$, then $$g\ke(f) = \ke(f)$$. Therefore, $$\ke(\phi) = \{e_G \ke(f)\}$$.
+
+
+#### Remark
+
+Assume $$f: G \rightarrow H$$ is a homomorphism, then we have:
+
+- (Homorphism preserves subgroups of images and preimages)
+  
+  - If $$A \subset G$$ is a subgroup, then $$f(A) \subset H$$ is a subgroup.
+
+    - Since the homomorphism preserves the group law. Therefore, $$f(A)$$ is closed under the group law.
+
+  - If $$B \subset H$$ is a subgroup, then $$f^{-1}(B) \subset G$$ is a subgroup.
+  
+    -  (Unit element)$$e_G \in f^{-1}(B)$$ since $$f(e_G) = e_H \in B$$.
+    -  (Closed under inverse) If $$g \in f^{-1}(B)$$, then $$f(g) \in B$$. Since $$B$$ is a subgroup, then $$f(g)^{-1} \in B$$. We know that $$f^{-1}(g) = f(g^{-1})$$, then $$g^{-1} \in f^{-1}(B)$$.
+
+- (Homomorphism preserves normal subgroups of preimages) If $$N \subset H$$ is a normal subgroup, then $$f^{-1}(N) \subset G$$ is a normal subgroup.
+
+    - (Normal) Let $$x \in f^{-1}(B)$$ and $$g \in G$$ be arbitrary. Then,
+
+        $$
+        f(x) \in N
+        $$
+
+        Since $$N$$ is normal,
+
+        $$
+        f(g)f(x)f(g)^{-1} \in N \Longrightarrow f(gxg^{-1}) \in N \Longrightarrow gxg^{-1} \in f^{-1}(N) 
+        $$
+
+        Therefore, $$f^{-1}(N)$$ is a normal subgroup of $$G$$.
+
+- The image of a normal subgroup of a homomorphism does not have to be normal subgroup. E.g.
+
+    - $$G = S_3 \text{ and } A = S_2 \subset S_3$$. $$A$$ is not a normal subgroup of $$S_3$$ but $$A$$ is the normal subgroup of itself. Consider the identity homomorphism $$id: A \to G$$. Then $$id(A) = A$$ is not a normal subgroup of $$G$$.
+
+    If $$f: G \to H$$ is a surjective homomorphism, then if $$A$$ is a normal subgroup of $$G$$, then $$f(A)$$ is a normal subgroup of $$H$$.
+
+    **Proof**: 
+
+    Since $$f$$ is surjective, then $$f(A) = H$$. We could have this:\
+
+    $$
+    f(g)f(A)f(g)^{-1} = f(gAg^{-1}) \in f(A)
+    $$
+
+    Therefore, $$f(A)$$ is a normal subgroup of $$H$$.
+
+#### Proposition 1.22 (Correspondece theorem)
+
+Let $$N$$ be a normal subgroup of $$G$$. Let $$f:G \to G/N$$ be the surjective homomorphism $$g \mapsto gN$$. Then there is a bijection:
+
+$$
+\left\{\text{subgroups } S \subset G \text { that contain } N\right\} \stackrel{\text{bijection}}{\longrightarrow}\left\{\text{subgroups } \text{ of } G / N\right\}
+$$
+
+Moreover, $$S$$ is normal in $$G$$ if and only if $$S/N$$ is normal in $$G/N$$.
+
+**Proof**:
+
+
+
+### 1.3 Group-theoretic constructions
+
+#### Definition (Group of Inner automorphism)
+
+The conjugations by the elements of $$G$$ form a subgroup of $$Aut(G)$$, called the **group of inner automorphisms** of $$G$$ and denoted by $$Inn(G)$$.
+
+#### Lemma (Group of inner automorphisms is a subgroup of $$Aut(G)$$)
+
+The inverse of the conjugation by $$g$$ is the conjugation by $$g^{-1}$$, so the group of inner automorphisms is a subgroup of $$Aut(G)$$. Therefore, $$Inn(G)$$ is a subgroup of $$Aut(G)$$.
+
+#### Definition (Center of $$G$$)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
