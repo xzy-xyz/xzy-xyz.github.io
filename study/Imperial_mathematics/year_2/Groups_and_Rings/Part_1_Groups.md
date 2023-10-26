@@ -649,29 +649,148 @@ Assume $$f: G \rightarrow H$$ is a homomorphism, then we have:
 
 #### Proposition 1.22 (Correspondece theorem)
 
-Let $$N$$ be a normal subgroup of $$G$$. Let $$f:G \to G/N$$ be the surjective homomorphism $$g \mapsto gN$$. Then there is a bijection:
+Let $$N$$ be a normal subgroup of $$G$$. Let $$f:G \to G/N$$ be the surjective homomorphism $$g \mapsto gN$$. Then f is a bijection:
 
 $$
-\left\{\text{subgroups } S \subset G \text { that contain } N\right\} \stackrel{\text{bijection}}{\longrightarrow}\left\{\text{subgroups } \text{ of } G / N\right\}
+G_1 = \left\{\text{subgroups } S \subset G \text { that contain } N\right\} \stackrel{\stackrel{f}{\sim}}{\longrightarrow}\left\{\text{subgroups of } G / N\right\} = G_2
 $$
 
 Moreover, $$S$$ is normal in $$G$$ if and only if $$S/N$$ is normal in $$G/N$$.
 
 **Proof**:
 
+1. Since $$N$$ is a normal subgroup in $$G$$, in particular, $$N$$ is a subgroup of $$S$$. As $$N = \ke(f)$$, then $$S/N = f(S)$$ is a subgroup of $$G/N$$ by the first isomorphism theorem.  
 
+2. To show there is a bijection, we need to show that there is a map which composition is the identity map from both sides of domain and codomain meaning that we need to find $$f^{-1}$$. We notice that $$S$$ is the disjoint union of the cosets $$gN, g\in S$$.
+
+    $$
+    S = \bigcup_{g \in S} gN \text{ (disjoin union)}
+    $$
+
+    - $$f^{-1} \circ f = id_{G_1}$$: Let $$S \in G_1$$ be a subgroup that contains $$N$$, then we have:
+
+        $$
+        f^{-1}(f(S)) = f^{-1}\left(f\left(\bigcup_{g \in S} gN\right)\right) = \bigcup_{g \in S} f\circ f^{-1}(gN) = \bigcup_{g \in S} gN = S
+        $$
+
+    - $$f \circ f^{-1} = id_{G_2}$$: Let $$H \in G_2$$ be arbitrary, then we have:
+
+        $$
+        f (f^{-1}(H)) = H
+        $$
+
+3. By previous remark, since $$f$$ is a surjective homomorphism, then $$S$$ is normal if and only if $$f(S)$$ is normal. Therefore, $$S$$ is normal in $$G$$ if and only if $$S/N$$ is normal in $$G/N$$.
 
 ### 1.3 Group-theoretic constructions
 
-#### Definition (Group of Inner automorphism)
+#### Definition 1.31 (Group of Inner automorphism)
 
-The conjugations by the elements of $$G$$ form a subgroup of $$Aut(G)$$, called the **group of inner automorphisms** of $$G$$ and denoted by $$Inn(G)$$.
+The set of the conjugations by the elements of $$G$$ forms a subgroup of $$Aut(G)$$, called the **group of inner automorphisms** of $$G$$ and denoted by $$Inn(G)$$, it is also called conjugation group of $$G$$.
 
-#### Lemma (Group of inner automorphisms is a subgroup of $$Aut(G)$$)
+**Proof**: 
 
-The inverse of the conjugation by $$g$$ is the conjugation by $$g^{-1}$$, so the group of inner automorphisms is a subgroup of $$Aut(G)$$. Therefore, $$Inn(G)$$ is a subgroup of $$Aut(G)$$.
+We show that the inner automorphisms form a subgroup of $$Aut(G)$$.
 
-#### Definition (Center of $$G$$)
+- (Closure) Let $$f_1, f_2 \in Inn(G)$$ and $$x \in G$$ be arbitrary, then we have:
+
+    $$
+    f_1 \circ f_2 (x) = f_1(f_2(x)) = f_1([x \to g_2 x g_2^{-1}]) = [x \mapsto g_1 g_2 x g_2^{-1} g_1^{-1}] =[x\mapsto (g_1 g_2) x (g_1 g_2)^{-1}]
+    $$
+    Therefore, $$f_1 \circ f_2 \in Inn(G)$$.
+
+- (Identity) The identity map $$id_G$$ is an inner automorphism.
+
+- (Inverse) Let $$f \in Inn(G)$$ be arbitrary, if $$f(x) = [x \mapsto g x g^{-1}]$$, then $$f^{-1}(x) = [x \mapsto g^{-1} x g] =[x \mapsto g^{-1}x(g^{-1})^{-1}]$$. Therefore, $$f^{-1} \in Inn(G)$$.
+
+#### Lemma 1.32
+
+Let $$G$$ be a group and $$Aut(G)$$ be the associated automorphism group. The map $$\phi: G \to Inn(G)$$ sending the element $$g$$ of $$G$$ to the conjugation by $$g$$ is a homomorphism. Moreover, $$\ke(\phi) = \{g \in G| gx = xg, \forall x \in G\}$$.
+
+**Proof**:
+
+1. (Homomorphism) We have to show that for any $$a, b \in G$$ the conjugation by $$a b$$ is the composition of the conjugation by $$a$$ and the conjugation by $$b$$.
+   
+   Let $$x \in G$$ be arbitrary.
+
+    $$
+    \phi(a b) = [x \mapsto (a b) x (a b)^{-1}] = [x \mapsto a (b x b^{-1}) a^{-1}] = [x \mapsto a x a^{-1}] \circ [x \mapsto b x b^{-1}] = \phi(a) \circ \phi(b)
+    $$
+
+2. (Kernel) Let $$x \in \ke(\phi)$$ and $$g \in G$$ be arbitrary, then we have:
+
+    $$
+    \phi(x) = [x \mapsto x] \Longrightarrow  gxg^{-1} = x \Longrightarrow gx = xg
+    $$
+
+    Therefore, $$\ke(\phi) = \{g \in G| gx = xg, \forall x \in G\}$$.
+
+#### Definition 1.33 (Center of a group)
+
+Let $$G$$ be a group. The **center** of $$G$$ is the set of elements of $$G$$ that commute with all elements of $$G$$:
+
+$$
+Z(G) = \ke(\phi) = \{g\in G| gxg^{-1}, \forall x\in G\}=\{g \in G| gx = xg, \forall x \in G\}
+$$
+
+where $$\phi: G \to Inn(G)$$.
+
+#### Remark
+
+1. $$Z(G)$$ is a normal subgroup of $$G$$ since it is the kernel of the homomorphism $$\phi: G \to Inn(G)$$.
+
+2. The first isomomorphism theorem tells us that $$G/Z(G) \iso Inn(G)$$.
+
+3. $$Z(G) = G$$ if and only if $$G$$ is Abelian.
+
+#### Definition 1.34 (Communtator)
+
+Let $$G$$ be a group. For $$a, b \in G$$ we define the **commutator** of $$a$$ and $$b$$ as
+
+$$
+[a, b] = a b a^{-1} b^{-1}
+$$
+
+#### Remark
+
+1. $$[a, b] = e_G$$ if and only if $$a b = b a$$.
+
+2. $$[a, b] = [b, a]^{-1}$$. 
+
+#### Lemma 1.36 (The intersection of subgroups is a subgroup)
+
+Let $$I$$ be a set and $$G$$ be a group. Suppose that for each $$i \in I$$ we are given a subgroup $$G_{i} \subset G$$. Then the intersection $$\bigcap_{i \in I} G_{i}$$ is a subgroup of $$G$$.
+
+**Proof**:
+
+1. (Identity) Since $$e_G \in G_i$$ for all $$i \in I$$, then $$e_G \in \bigcap_{i \in I} G_{i}$$.
+
+2. (Closure under group operation) Let $$x, y \in \bigcap_{i \in I} G_{i}$$ be arbitrary, then $$x, y \in G_i$$ for all $$i \in I$$. Since $$G_i$$ is a subgroup of $$G$$, then $$x y \in G_i$$ for all $$i \in I$$. Therefore, $$x y \in \bigcap_{i \in I} G_{i}$$.
+
+3. (Closure under inverse) Let $$x \in \bigcap_{i \in I} G_{i}$$ be arbitrary, then $$x \in G_i$$ for all $$i \in I$$. Since $$G_i$$ is a subgroup of $$G$$, then $$x^{-1} \in G_i$$ for all $$i \in I$$. Therefore, $$x^{-1} \in \bigcap_{i \in I} G_{i}$$.
+
+#### Definition 1.37 (Generated subgroup)
+
+Let $$G$$ be a group and $$S$$ be a subgroup of $$G$$. The intersection of all subgroups of $$G$$ that contains $$S$$ (which is a subgroup of $$G$$ by the previous lemma) is called the **subgroup generated by $$S$$**. If the subgroup is $$G$$ itself, we say that $$S$$ **generates** $$G$$.
+
+#### Definition 1.38 (Commutator subgroup)
+
+Let $$G$$ be a group. The subgroup of $$G$$ generated by all commutators of $$G$$ is called the **commutator subgroup** of $$G$$ and is denoted by $$[G, G]$$.
+
+#### Remark
+
+$$[G, G] = \{e_G\}$$ if and only if $$G$$ is Abelian.
+
+#### Lemma 1.39 (The commutator subgroup is a normal subgroup and the quotient group of modulo the commutator subgroup is Abelian)
+
+Let $$G$$ be a group. The commutator subgroup $$[G, G]$$ is a normal subgroup of $$G$$ and $$G / [G, G]$$ is Abelian.
+
+**Proof**:
+
+
+
+
+
+
 
 
 
