@@ -42,13 +42,14 @@ $$\gdef\gcd{\operatorname{gcd}}$$
 
 ## 1. Course Overview
 
-For now, we assume $$\F$$ is a field.
+> For now, we assume $$\F$$ is a field.
 
 ### Matrix results
 
 #### Definition (Similar matrices)
 
-Let $$A$$ and $$B$$ be $$n \times n$$ matrices over $$\F$$, then we say that $$A$$ and $$B$$ are **similar** if there exists an invertible $$n \times n$$ matrix $$P$$ such that
+- $$A$$ and $$B$$ be $$n \times n$$ matrices over $$\F$$
+  we say that $$A$$ and $$B$$ are **similar** if there exists an invertible $$n \times n$$ matrix $$P$$ such that
 
 $$
 B = P^{-1}AP
@@ -63,9 +64,13 @@ Notice that the $$\sim$$ defines an equivalence relation. (Proof in Problem Shee
 Let $$A$$ and $$B$$ be $$n \times n$$ matrices over a field $$\F$$. If $$A \sim B$$, then $$A$$ and $$B$$ have the same
 
 1. ranks(Multiplications by invertible matrices do not change the rank of a matrix)
+   
 2. characteristic polynomials -- implies the following 3, 4 and 5.
+   
 3. eigenvalues
+   
 4. determinant
+   
 5. trace
 
 #### Major Aim
@@ -172,7 +177,9 @@ To see this, we need to introduce a bit of new notaiton:
 
 #### Definition (Companion matrix)
 
-Let $$p(x)$$ be a monic polynomial of degree $$r$$. The **companion matrix** of $$p(x)$$ is the $$r \times r$$ matrix $$C(p(x))$$ defined as follows:
+- $$p(x)$$ be a monic polynomial of degree $$r$$. 
+  
+  The **companion matrix** of $$p(x)$$ is the $$r \times r$$ matrix $$C(p(x))$$ defined as follows:
 
 $$
 C(p(x)) = \begin{pmatrix}

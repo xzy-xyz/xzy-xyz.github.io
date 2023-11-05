@@ -12,13 +12,15 @@ $$\gdef\F{\mathcal{F}}$$
 $$\gdef\deg{\operatorname{deg}}$$
 $$\gdef\gcd{\operatorname{gcd}}$$
 
-> Next, we assume $$V$$ is a finite-dimensional vector space over $$\F$$.
+> Next, we assume $$V$$ and $$W$$ is a finite-dimensional vector space over $$\F$$.
 
 ### Basis
 
 #### Definition (Matrix of a linear map)
 
-Let $$T:V \to V$$ be a linear map. Let $$B = \{v_1, \dots, v_n\}$$ be a basis of $$V$$, let
+- $$T:V \to V$$ be a linear map.
+
+- $$B = \{v_1, \dots, v_n\}$$ be a basis of $$V$$, let
 
 $$
 \begin{aligned}
@@ -42,7 +44,11 @@ $$
 
 #### Proposition (The matrix of a composition of linear maps is the product of the matrices)
 
-Let $$S: V \rightarrow V$$ and $$T: V \rightarrow V$$ be linear transformations and let $$B$$ be a basis of $$V$$. Then
+- $$S: V \rightarrow V$$ 
+
+- $$T: V \rightarrow V$$ be linear transformations
+  
+- $$B$$ be a basis of $$V$$. Then
 
 $$
 [S T]_{B}=[S]_{B}[T]_{B},
@@ -74,7 +80,11 @@ $$
 
 #### Definition (Change of basis matrix)
 
-Let bases $$E = \{e_1, \dots, e_n\}$$ and $$F = \{f_1, \dots, f_n\}$$ of $$V$$ be given and we write
+- Bases $$E = \{e_1, \dots, e_n\}$$ 
+  
+- $$F = \{f_1, \dots, f_n\}$$ of $$V$$ be given,
+  
+  we write
 
 $$
 \begin{aligned}
@@ -120,7 +130,7 @@ This is a polynomial in $$x$$ of degree $$n = \dim V$$.
 
 #### Proposition
 
-1. The eigenvalues of $$T$$ are the roots of the characteristic polynomial $$\chi_T(x)$$.
+1. The eigenvalues of $$T$$ are the roots of the characteristic polynomial $$\c_T(x)$$.
 
 2. If $$\lambda$$ is an eigenvalue of $$T$$, the eigenvectors corresponding to $$\lambda$$ are the non-zero vectors in
 
@@ -136,7 +146,11 @@ We call $$E_{\lambda}$$ the **$$\lambda$$-eigenspace** of $$T$$. Note that $$E_{
 
 #### Proposition (Any linear transformation has eigenvalue(s))
 
-Let $$V$$ be a finite-dimentional vector space over $$\C$$, and let $$T: V \rightarrow V$$ be a linear map. Then $$T$$ has an eigenvalue $$\lambda \in \C$$.
+- $$V$$ be a finite-dimentional vector space over $$\C$$,
+  
+- $$T: V \rightarrow V$$ be a linear map. Then $$T$$ has an eigenvalue $$\lambda \in \C$$.
+
+##### Remark
 
 It is not always true for any field $$\F$$. For example, the linear transformation $$T: \R^2 \rightarrow \R^2$$ defined by
 
@@ -160,7 +174,11 @@ A linear map $$T: V \rightarrow V$$ is **diagonalizable** if there exists a basi
 
 #### Proposition
 
-Let $$T: V \rightarrow V$$ be a linear map. Suppose $$v_{1}, \ldots, v_{k}$$ are eigenvectors of $$T$$ corresponding to distinct eigenvalues $$\lambda_{1}, \ldots, \lambda_{k}$$. Then $$v_{1}, \ldots, v_{k}$$ are linearly independent.
+- $$T: V \rightarrow V$$ be a linear map. 
+  
+- Suppose $$v_{1}, \ldots, v_{k}$$ are eigenvectors of $$T$$ corresponding to distinct eigenvalues $$\lambda_{1}, \ldots, \lambda_{k}$$. 
+  
+  Then, $$v_{1}, \ldots, v_{k}$$ are linearly independent.
 
 **Proof**: (By induction on $$k$$)
 
@@ -217,7 +235,13 @@ Let $$T: V \rightarrow V$$ be a linear map. Suppose $$v_{1}, \ldots, v_{k}$$ are
 
 #### Corollary
 
-Let $$V$$ be $$n$$-dimensional over $$\F$$, and let $$T: V \rightarrow V$$ a linear map. Suppose the characteristic polynomial of $$T$$ has $$n$$ distinct roots in $$F$$. Then $$T$$ is diagonalisable.
+- $$V$$ be $$n$$-dimensional over $$\F$$,
+  
+- $$T: V \rightarrow V$$ a linear map. 
+
+- Suppose the characteristic polynomial of $$T$$ has $$n$$ distinct roots in $$F$$. 
+
+  Then $$T$$ is diagonalisable.
 
 **Proof**:
 

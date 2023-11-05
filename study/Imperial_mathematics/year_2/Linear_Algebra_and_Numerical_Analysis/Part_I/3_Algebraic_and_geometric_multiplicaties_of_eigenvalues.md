@@ -18,7 +18,11 @@ $$\gdef\abs#1{\left| #1 \right|}$$
 
 #### Definition (Algebraic multiplicity)
 
-Let $$T: V \rightarrow V$$ be a linear map with characteristic polynomial $$c_T(x)$$. Let $$\lambda$$ be a root of $$c_T(x)$$ (i.e. an eigenvalue of $$T$$ ). Then there is a positive integer $$a(\lambda)$$ such that
+- $$T: V \rightarrow V$$ be a linear map with characteristic polynomial $$c_T(x)$$. 
+
+- Let $$\lambda$$ be a root of $$c_T(x)$$ (i.e. an eigenvalue of $$T$$ ). 
+  
+Then there is a positive integer $$a(\lambda)$$ such that
 
 $$
 p(x)=(x-\lambda)^{a(\lambda)} q(x),
@@ -78,11 +82,15 @@ $$
 
 where $$s(x)$$ is the characteristic polynomial of $$A$$. So, $$a(\lambda) \geq r = g(\lambda)$$. $$\square$$
 
-
-
 #### Theorem (Test for diagonalizability)
 
-Let $$\operatorname{dim} V=n$$, let $$T: V \rightarrow V$$ be a linear map, let $$\lambda_{1}, \ldots, \lambda_{r}$$ be the distinct eigenvalues of $$T$$, and let the characteristic polynomial of $$T$$ be
+- $$\operatorname{dim} V=n$$,
+  
+- $$T: V \rightarrow V$$ be a linear map
+  
+- $$\lambda_{1}, \ldots, \lambda_{r}$$ be the distinct eigenvalues of $$T$$
+  
+- let the characteristic polynomial of $$T$$ be
 
 $$
 c_T(x)=\prod_{i=1}^{r}\left(x-\lambda_{i}\right)^{a\left(\lambda_{i}\right)}
