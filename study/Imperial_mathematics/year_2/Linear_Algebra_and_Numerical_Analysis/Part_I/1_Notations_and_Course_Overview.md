@@ -12,6 +12,8 @@ $$\gdef\F{\mathcal{F}}$$
 $$\gdef\dim{\operatorname{dim}}$$
 $$\gdef\deg{\operatorname{deg}}$$
 $$\gdef\gcd{\operatorname{gcd}}$$
+$$\gdef\inner#1#2{\langle #1, #2 \rangle}$$
+$$\gdef\norm#1{\left\lVert#1\right\rVert}$$
 
 ## 0. Notations
 
