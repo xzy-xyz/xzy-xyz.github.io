@@ -12,6 +12,7 @@ $$\gdef\F{\mathcal{F}}$$
 $$\gdef\dime{\operatorname{dim}}$$
 $$\gdef\deg{\operatorname{deg}}$$
 $$\gdef\gcd{\operatorname{gcd}}$$
+$$\gdef\abs[#1]{\left\lvert #1 \right\rvert}$$
 
 
 
@@ -104,7 +105,7 @@ $$
         - By definition of diagonalisable, there exists a basis $$B$$ of $$V$$ consisting of eigenvectors of $$T$$. Hence, each vector in $$B$$ is in some eigenspace $$E_{\lambda_i}$$, so
 
             $$
-           \sum_{i = 1}^r \dime E_{\lambda_i} = \sum_{i = 1}^r g(\lambda_i) \leq |B| = n
+           \sum_{i = 1}^r \dime E_{\lambda_i} = \sum_{i = 1}^r g(\lambda_i) \leq \abs{B}= n
             $$
 
         - From the previous proposition, we have $$\sum_{i=1}^r g(\lambda_i) \leq \sum_{i=1}^r a(\lambda_i) = n$$. Hence, we get
@@ -127,11 +128,11 @@ $$
             B = \bigcup_{i = 1}^r B_i
             $$
 
-            Then $$B = \sum|B_i| = \sum \dime E_{\lambda_i} = n$$ since $$B_i$$ are disjoint. 
+            Then $$B = \sum \abs{B_i} = \sum \dime E_{\lambda_i} = n$$ since $$B_i$$ are disjoint. 
 
             `Claim`: $$B$$ is a basis of $$V$$.
 
-            `Proof of Claim`: Since $$|B| = n = \dime V$$, it is enough to show that $$B$$ is linearly independent. Suppose there is a linear relation on the vector in $$B$$, and we write it as
+            `Proof of Claim`: Since $$\abs{B} = n = \dime V$$, it is enough to show that $$B$$ is linearly independent. Suppose there is a linear relation on the vector in $$B$$, and we write it as
 
             $$
             \sum_{a \in B_1} \alpha_0 a + \sum_{a \in B_2} \alpha_1 b + \dots + \sum_{a \in B_r} \alpha_{r-1} z = 0
@@ -162,8 +163,8 @@ $$
 
     $$
     \begin{aligned}
-    \sum_{i = 1}^r g(\lambda_i) = n & \Longleftarrow \sum_{i = 1}^r g(\lambda_i) = \sum_{i = 1}^r a(\lambda_i) \\
-    & \Longleftarrow g(\lambda_i) = a(\lambda_i) \forall i
+    \sum_{i = 1}^r g(\lambda_i) = n & \Longleftrightarrow \sum_{i = 1}^r g(\lambda_i) = \sum_{i = 1}^r a(\lambda_i) \\
+    & \Longleftrightarrow g(\lambda_i) = a(\lambda_i) \forall i
     \end{aligned}
     $$    $$\square$$
 
