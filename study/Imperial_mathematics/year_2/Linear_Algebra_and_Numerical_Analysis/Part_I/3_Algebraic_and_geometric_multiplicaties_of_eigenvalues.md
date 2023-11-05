@@ -131,7 +131,7 @@ $$
 
             `Claim`: $$B$$ is a basis of $$V$$.
 
-            `Proof of Claim`: Since $$|B| = n = \dim V$$, it is enough to show that $$B$$ is linearly independent. Suppose there is a linear relation on the vector in $$B$$, and we write it as
+            `Proof of Claim`: Since $$|B| = n = \dime V$$, it is enough to show that $$B$$ is linearly independent. Suppose there is a linear relation on the vector in $$B$$, and we write it as
 
             $$
             \sum_{a \in B_1} \alpha_0 a + \sum_{a \in B_2} \alpha_1 b + \dots + \sum_{a \in B_r} \alpha_{r-1} z = 0
