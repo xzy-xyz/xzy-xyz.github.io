@@ -130,7 +130,7 @@ This is a polynomial in $$x$$ of degree $$n = \dim V$$.
 
 #### Proposition
 
-1. The eigenvalues of $$T$$ are the roots of the characteristic polynomial $$\c_T(x)$$.
+1. The eigenvalues of $$T$$ are the roots of the characteristic polynomial $$c_T(x)$$.
 
 2. If $$\lambda$$ is an eigenvalue of $$T$$, the eigenvectors corresponding to $$\lambda$$ are the non-zero vectors in
 
