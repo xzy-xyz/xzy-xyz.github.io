@@ -125,7 +125,7 @@ The following statements are equivalent:
    
 2. - $$\operatorname{dim} V=\sum_{i=1}^{k} \operatorname{dim} V_{i}$$
    
-   - and if $$B_{i}$$ is a basis for $$V_{i}$$ for $$1 \leq i \leq k$$, then the union $$B=$$ $$B_{1} \cup \cdots \cup B_{k}$$ is a basis of $$V$$.
+   -  If $$B_{i}$$ is a basis for $$V_{i}$$ for $$1 \leq i \leq k$$, then the union $$B=$$ $$B_{1} \cup \cdots \cup B_{k}$$ is a basis of $$V$$.
 
 **Proof**:
 
@@ -187,33 +187,31 @@ The following statements are equivalent:
 
     2. $$B_i$$ is a basis for $$V_i$$ for $$1 \leq i \leq k$$ with $$B = \bigcup_{i=1}^k B_i$$ is a basis of $$V$$.
 
-        - `Subspace sum`: By 1, we have
+    - `Subspace sum`: By 1, we have
 
-            $$
-            \abs{B} = \sum_{i=1}^k \abs{B_i}
-            $$
+        $$
+        \abs{B} = \sum_{i=1}^k \abs{B_i}
+        $$
 
-            Therefore, $$B_i$$ are disjoint. 
-
-            Since $$B$$ is a basis of $$V$$, for every $$v \in V$$, $$v \in \operatorname{Span}(B)$$. Hence, $$v$$ can be expressed as a linear combination of vectors in $$V_i$$ for $$1 \leq i \leq k$$. So
+        Therefore, $$B_i$$ are disjoint. Since $$B$$ is a basis of $$V$$, for every $$v \in V$$, $$v \in \operatorname{Span}(B)$$. Hence, $$v$$ can be expressed as a linear combination of vectors in $$V_i$$ for $$1 \leq i \leq k$$. So
     
-            $$
-            V = V_1 + \dots + V_k
-            $$
+    $$
+    V = V_1 + \dots + V_k
+    $$
 
-        - `Uniqueness`: By contradiction, we suppose there exists $$v \in V$$ such that
+    - `Uniqueness`: By contradiction, we suppose there exists $$v \in V$$ such that
 
-                $$
-                v = v_1 + v_2 + \dots + v_k = v_1' + v_2' + \dots + v_k'
-                $$
+        $$
+        v = v_1 + v_2 + \dots + v_k = v_1' + v_2' + \dots + v_k'
+        $$
             
-            with $$v_i, v_i' \in V_i$$ for all $$i$$. Then
+        with $$v_i, v_i' \in V_i$$ for all $$i$$. Then
                
-               $$
-               0 = (v_1 - v_1') + (v_2 - v_2') + \dots + (v_k - v_k')
-               $$
+        $$
+        0 = (v_1 - v_1') + (v_2 - v_2') + \dots + (v_k - v_k')
+        $$
 
-               If not every $$v_i - v_i' = 0$$, this equation will give a non trivial linear combination in the basis $$B$$, which is a linearly independent set. It gives a contradiction. Hence, $$v_i = v_i'$$ for all $$i$$.
+        If not every $$v_i - v_i' = 0$$, this equation will give a non trivial linear combination in the basis $$B$$, which is a linearly independent set. It gives a contradiction. Hence, $$v_i = v_i'$$ for all $$i$$.
 
     Hence, $$V = V_1 \oplus \dots \oplus V_k$$. $$\square$$
 
@@ -257,7 +255,9 @@ The following statements are equivalent:
 
 - $$A_{i}$$ is the matrix of the restriction $$\left[T_{V_{i}}\right]_{B_{i}}$$. 
   
-  Then if $$B$$ is the basis $$\bigcup_{1}^{k} B_{i}$$ of $$V$$, the matrix $$[T]_{B}$$ is **the block-diagonal matrix**.
+- $$B$$ is the basis $$\bigcup_{1}^{k} B_{i}$$ of $$V$$
+  
+  The matrix $$[T]_{B}$$ is **the block-diagonal matrix**.
 
     $$ 
     [T]_B =\begin{pmatrix}
