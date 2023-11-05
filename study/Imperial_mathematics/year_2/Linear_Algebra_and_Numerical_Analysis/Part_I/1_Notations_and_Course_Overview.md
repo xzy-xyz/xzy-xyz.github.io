@@ -231,9 +231,9 @@ $$
 
 #### Orthogonality and symmetry
 
-- P is orthogonal if $$P^TP = I$$, which implies that $$Pu \cdot Pv = u \cdot v$$ for all $$u, v \in \R^n$$.
+- $$P$$ is orthogonal if $$P^TP = I$$, which implies that $$Pu \cdot Pv = u \cdot v$$ for all $$u, v \in \R^n$$.
   
-- P is symmetric if $$P^T = P$$, which implies that $$Pu \cdot Pv = u \cdot Pv$$ for all $$u, v \in \R^n$$.
+- $$P$$ is symmetric if $$P^T = P$$, which implies that $$Pu \cdot Pv = u \cdot Pv$$ for all $$u, v \in \R^n$$.
 
 #### Definition (Inner Product Space)
 
