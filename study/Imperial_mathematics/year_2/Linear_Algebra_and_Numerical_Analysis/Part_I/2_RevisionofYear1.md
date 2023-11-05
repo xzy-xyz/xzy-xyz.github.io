@@ -148,7 +148,9 @@ We call $$E_{\lambda}$$ the **$$\lambda$$-eigenspace** of $$T$$. Note that $$E_{
 
 - $$V$$ be a finite-dimentional vector space over $$\C$$,
   
-- $$T: V \rightarrow V$$ be a linear map. Then $$T$$ has an eigenvalue $$\lambda \in \C$$.
+- $$T: V \rightarrow V$$ be a linear map.
+  
+  Then $$T$$ has an eigenvalue $$\lambda \in \C$$.
 
 ##### Remark
 
@@ -239,7 +241,7 @@ A linear map $$T: V \rightarrow V$$ is **diagonalizable** if there exists a basi
   
 - $$T: V \rightarrow V$$ a linear map. 
 
-- Suppose the characteristic polynomial of $$T$$ has $$n$$ distinct roots in $$F$$. 
+- The characteristic polynomial of $$T$$ has $$n$$ distinct roots in $$F$$. 
 
   Then $$T$$ is diagonalisable.
 
