@@ -20,3 +20,5 @@ layout: simple
 - [2. Some revision from 1st Year Linear Algebra](/study/Imperial_mathematics/year_2/Linear_Algebra_and_Numerical_Analysis/Part_I/2_RevisionofYear1)
 
 - [3. Algebraic and geometric multiplicaties of eigenvalues](/study/Imperial_mathematics/year_2/Linear_Algebra_and_Numerical_Analysis/Part_I/3_Algebraic_and_geometric_multiplicaties_of_eigenvalues)
+
+- [4. Direct Sum](/study/Imperial_mathematics/year_2/Linear_Algebra_and_Numerical_Analysis/Part_I/4_Direct_Sum)
