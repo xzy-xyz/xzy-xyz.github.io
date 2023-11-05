@@ -49,15 +49,15 @@ $$\gdef\abs#1{\left| #1 \right|}$$
 
     **unique vectors** $$v_i \in V_i$$. If $$(1)$$ holds, we say that $$V$$ is the **direct sum** of the subspaces $$V_1, \dots, V_k$$.
 
-##### Remark
-
-The uniqueness statement means that if
-
-$$
+> **Remark**
+>
+>The uniqueness statement means that if
+>
+>$$
 v_1 + \dots + v_k = v_1' + \dots + v_k'
 $$
-
-with $$v_i, v_i' \in V_i$$ for all $$i$$, then $$v_i = v_i'$$ for all $$i$$.
+>
+>with $$v_i, v_i' \in V_i$$ for all $$i$$, then $$v_i = v_i'$$ for all $$i$$.
 
 #### Proposition (Direct sum of two subspaces is a subspace iif they intersect trivially)
 

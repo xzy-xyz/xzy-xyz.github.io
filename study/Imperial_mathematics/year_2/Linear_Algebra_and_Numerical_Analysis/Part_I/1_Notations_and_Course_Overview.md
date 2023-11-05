@@ -87,15 +87,14 @@ We start from the easiest case: diagonalization. Recall the definition of diagon
 
 An $$n \times n$$ matrix $$A$$ over $$\F$$ is **diagonalizable** if $$A \sim D$$ where $$D = diag(\lambda_1, \dots, \lambda_n)$$ is a diagonal matrix with diagonal entries $$\lambda_1, \dots, \lambda_n \in \F$$, which are the eigenvalues of $$A$$.
 
-##### Remark
 
-- We could use the property of similarity of diagonal matrices to calculuate any power $$A^k$$.
-  
-    $$
-    A^k = (PDP^{-1})^k = PD^kP^{-1}
-    $$
 
-    where $$D^k = diag(\lambda_1^k, \dots, \lambda_n^k)$$.
+> **Remark**
+> We could use the property of similarity of diagonal matrices to calculuate any     power $$A^k$$.
+> $$
+> A^k = (PDP^{-1})^k = PD^kP^{-1}
+> $$
+> where $$D^k = diag(\lambda_1^k, \dots, \lambda_n^k)$$.
 
 However, most matrices are not diagonalizable. However, every complex matrix could be **triangularised**.
 
@@ -114,13 +113,13 @@ P^{-1} A P=\left(\begin{array}{cccccc}
 \end{array}\right) .
 $$
 
-##### Remark
 
-1. This does not always hold for any field $$\F$$.
-
-2. This upper triangular matrix is not unique since we can always do some row operations to make it more 'nice'. For example, we can make the diagonal entries to be $$1$$ by dividing the $$i$$-th row by $$\lambda_i$$.
-
-It is diserable to have a unique matrix of a nice form that is similar to $$A$$ and we have the next following form.
+> **Remark**
+>>1. This does not always hold for any field $$\F$$.
+>
+>>2. This upper triangular matrix is not unique since we can always do some row operations to make it more 'nice'. For example, we can make the diagonal entries to be $$1$$ by dividing the $$i$$-th row by $$\lambda_i$$.
+>
+>>3. It is diserable to have a unique matrix of a nice form that is similar to $$A$$ and we have the next following form.
 
 #### Definition (Jordan block)
 
@@ -156,11 +155,11 @@ $$
 
 The collection of *Jordan blocks* in $$J$$ is uniquely determined by $$A$$ and we call matrix $$J$$ the **Jordan canonical form(JCF)** of $$A$$.
 
-##### Remark
-
-- The uniqueness of $$J$$ is a vital part of this theorm since it gives a powerful test for the similarity of two complex matrices. i.e. $$A \sim B$$ if and only if $$A$$ and $$B$$ have the same Jordan canonical form.
-  
-- Notice that the Jordan Canonical Form does not always exist for any field $$\F$$, such as $$\R, \Q, \F_p$$. For more general fields, we have the following theorem.
+> **Remark**
+>
+>> - The uniqueness of $$J$$ is a vital part of this theorm since it gives a powerful test for the similarity of two complex matrices. i.e. $$A \sim B$$ if and only if $$A$$ and $$B$$ have the same Jordan canonical form.
+>
+>> - Notice that the Jordan Canonical Form does not always exist for any field $$\F$$, such as $$\R, \Q, \F_p$$. For more general fields, we have the following theorem.
 
 #### Rational Canonical Form theorm
 

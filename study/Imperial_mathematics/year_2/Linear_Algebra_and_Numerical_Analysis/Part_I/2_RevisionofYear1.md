@@ -56,24 +56,23 @@ $$
 
 where $$S T$$ is the composition of $$S$$ and $$T$$.
 
-##### Remark
-
-The propostion above gives us a lot nice properties of matrices. For example, if $$[T]_B = A$$ then $$[T^{k}]_B = A^{k}$$ for any positive integer $$k$$. More generally, if we are give such a polynomial $$q(x) = a_0 + a_1x + \dots + a_kx^k (a_i \in \F)$$, and define
-
-$$
-q(A) = a_0I + a_1A + \dots + a_kA^k
-$$
-
-and
-
-$$
+> **Remark**
+>
+>The propostion above gives us a lot nice properties of matrices. For example, if $$[T]_B = A$$ then $$[T^{k}]_B = A^{k}$$ for any positive integer $$k$$. More generally, if we are give such a polynomial $$q(x) = a_0 + a_1x + \dots + a_kx^k (a_i \in \F)$$, and define
+>
+> $$
+  q(A) = a_0I + a_1A + \dots + a_kA^k
+    $$
+>
+> and
+>$$
 q(T) = a_0I + a_1T + \dots + a_kT^k
 $$
-
-where $$I$$ is the identity map. Then we have
-
-$$
-[q(T)]_B = q([T]_B) = q(A)
+>
+> where $$I$$ is the identity map. Then we have
+> 
+>$$
+ [q(T)]_B = q([T]_B) = q(A)
 $$
 
 ### Change of basis
@@ -112,9 +111,9 @@ and define $$P$$ to be the $$n \times n$$ matrix $$\left(p_{i j}\right)$$. We ca
 
 As we mentioned before, if $$A$$ and $$B$$ are similar, then they have the same determinant. Hence, if $$T: V \rightarrow V$$ is a linear map, and $$E$$, $$F$$ are two bases of $$V$$, then the matrices $$[T]_E$$ and $$[T]_F$$ are similar and hence have the same determinant. So, we can define the determinant of $$T$$ to be the determinant of $$[T]_E$$ for any basis $$E$$ of $$V$$.
 
-##### Remark
-
-It is easy to notice that the matrix are just the expression of a linear map with respect to a basis. So, we can define the determinant of a linear map $$T$$ to be the determinant of $$[T]_E$$ for any basis $$E$$ of $$V$$ and the determinant of a linear transformation is invariant under change of basis.
+> **Remark**
+>
+>It is easy to notice that the matrix are just the expression of a linear map with respect to a basis. So, we can define the determinant of a linear map $$T$$ to be the determinant of $$[T]_E$$ for any basis $$E$$ of $$V$$ and the determinant of a linear transformation is invariant under change of basis.
 
 ### Eigen-stuffs
 
@@ -152,11 +151,11 @@ We call $$E_{\lambda}$$ the **$$\lambda$$-eigenspace** of $$T$$. Note that $$E_{
   
   Then $$T$$ has an eigenvalue $$\lambda \in \C$$.
 
-##### Remark
-
-It is not always true for any field $$\F$$. For example, the linear transformation $$T: \R^2 \rightarrow \R^2$$ defined by
-
-$$
+> **Remark**
+> 
+> It is not always true for any field $$\F$$. For example, the linear transformation $$T: \R^2 \rightarrow \R^2$$ defined by
+>
+>$$
 T\left(\left(\begin{array}{l}
 x_1 \\
 x_2
@@ -165,8 +164,8 @@ x_2 \\
 -x_1
 \end{array}\right)
 $$
-
-has the characteristic polynomial $$x^2 + 1$$ which has no roots in $$\R$$.
+>
+> has the characteristic polynomial $$x^2 + 1$$ which has no roots in $$\R$$.
 
 ### Diagonalisation
 
