@@ -18,11 +18,11 @@ $$\gdef\abs#1{\left| #1 \right|}$$
 
 #### Definition (Algebraic multiplicity)
 
-- $$T: V \rightarrow V$$ be a linear map with characteristic polynomial $$c_T(x)$$. 
+- $$T: V \rightarrow V$$ is a linear map with characteristic polynomial $$c_T(x)$$. 
 
-- Let $$\lambda$$ be a root of $$c_T(x)$$ (i.e. an eigenvalue of $$T$$ ). 
+- $$\lambda$$ is a root of $$c_T(x)$$ (i.e. an eigenvalue of $$T$$ ). 
   
-Then there is a positive integer $$a(\lambda)$$ such that
+    Then there is a positive integer $$a(\lambda)$$ such that
 
 $$
 p(x)=(x-\lambda)^{a(\lambda)} q(x),
