@@ -30,7 +30,7 @@ $$\gdef\abs#1{\left| #1 \right|}$$
 
 #### Definition (Direct sum)
 
-- $$V$$ be a vector space
+- $$V$$ is a vector space
   
 - $$V_1, \dots, V_k$$ are subspaces of $$V$$. 
   
