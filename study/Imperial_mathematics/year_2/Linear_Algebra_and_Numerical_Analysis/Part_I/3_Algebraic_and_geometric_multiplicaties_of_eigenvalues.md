@@ -19,8 +19,6 @@ $$\gdef\vc{\mathbf{c}}$$
 $$\gdef\deg{\operatorname{deg}}$$
 $$\gdef\gcd{\operatorname{gcd}}$$
 
-### Algebraic and geometric multiplicities
-
 #### Definition (Algebraic multiplicity)
 
 Let $$T: V \rightarrow V$$ be a linear map with characteristic polynomial $$c_T(x)$$. Let $$\lambda$$ be a root of $$c_T(x)$$ (i.e. an eigenvalue of $$T$$ ). Then there is a positive integer $$a(\lambda)$$ such that

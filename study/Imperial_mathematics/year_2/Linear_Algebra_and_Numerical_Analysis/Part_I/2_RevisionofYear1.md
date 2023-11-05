@@ -19,8 +19,7 @@ $$\gdef\vc{\mathbf{c}}$$
 $$\gdef\deg{\operatorname{deg}}$$
 $$\gdef\gcd{\operatorname{gcd}}$$
 
-
-Next, we assume $$V$$ is a finite-dimensional vector space over $$\F$$.
+> Next, we assume $$V$$ is a finite-dimensional vector space over $$\F$$.
 
 ### Basis
 
