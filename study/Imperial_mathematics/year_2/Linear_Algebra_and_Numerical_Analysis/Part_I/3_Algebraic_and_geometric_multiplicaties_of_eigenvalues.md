@@ -9,15 +9,11 @@ $$\gdef\Z{\mathbb{Z}}$$
 $$\gdef\N{\mathbb{N}}$$
 $$\gdef\Q{\mathbb{Q}}$$
 $$\gdef\F{\mathcal{F}}$$
-$$\gdef\inner#1#2{\langle #1, #2 \rangle}$$
-$$\gdef\norm#1{\left\| #1 \right\|}$$
-$$\gdef\abs#1{\left| #1 \right|}$$
-$$\gdef\set#1{\left\{ #1 \right\}}$$
-$$\gdef\va{\mathbf{a}}$$
-$$\gdef\vb{\mathbf{b}}$$
-$$\gdef\vc{\mathbf{c}}$$
+$$\gdef\dim{\operatorname{dim}}$$
 $$\gdef\deg{\operatorname{deg}}$$
 $$\gdef\gcd{\operatorname{gcd}}$$
+
+
 
 #### Definition (Algebraic multiplicity)
 
@@ -179,7 +175,7 @@ $$
     c_T(x)=\prod_{i=1}^{r}\left(x-\lambda_{i}\right)^{a\left(\lambda_{i}\right)}
     $$
 
-    **If it could not be factorised, then $$T$$ is not diagonalisable.**
+    **If it could not be factorised in $\F$, then $$T$$ is not diagonalisable.**
 
 2. Calculate each $$g\left(\lambda_{i}\right) = \dim E_{\lambda_i}$$.
 
