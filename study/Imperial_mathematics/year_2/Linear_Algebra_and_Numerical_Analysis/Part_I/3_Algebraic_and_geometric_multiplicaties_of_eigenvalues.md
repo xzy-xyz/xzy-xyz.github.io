@@ -176,7 +176,7 @@ $$
     c_T(x)=\prod_{i=1}^{r}\left(x-\lambda_{i}\right)^{a\left(\lambda_{i}\right)}
     $$
 
-    **If it could not be factorised in $\F$, then $$T$$ is not diagonalisable.**
+    **If it could not be factorised in $$\F$$, then $$T$$ is not diagonalisable.**
 
 2. Calculate each $$g\left(\lambda_{i}\right) = \dime E_{\lambda_i}$$.
 
