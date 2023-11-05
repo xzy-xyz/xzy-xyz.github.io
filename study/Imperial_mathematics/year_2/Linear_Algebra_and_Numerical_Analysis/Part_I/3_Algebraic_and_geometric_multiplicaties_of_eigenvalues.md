@@ -165,10 +165,8 @@ $$
     \begin{aligned}
     \sum_{i = 1}^r g(\lambda_i) = n & \Longleftrightarrow \sum_{i = 1}^r g(\lambda_i) = \sum_{i = 1}^r a(\lambda_i) \\
     & \Longleftrightarrow g(\lambda_i) = a(\lambda_i) \forall i
-    \end{aligned}
+    \end{aligned} \square
     $$
-    
-    $$\square$$
 
 #### Test for diagonalizability
 
