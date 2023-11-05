@@ -18,28 +18,36 @@ $$\gdef\abs#1{\left| #1 \right|}$$
 
 #### Definition (Sum of subspaces)
 
-Let $$V$$ be a vector space and let $$U_1, \dots, U_k$$ be subspaces of $$V$$. We define the **sum** of $$U_1, \dots, U_k$$ to be the set
+- $$V$$ is a vector space
+  
+- $$U_1, \dots, U_k$$ are subspaces of $$V$$
 
-$$
-U_1 + \dots + U_k = \{u_1 + \dots + u_k : u_i \in U_i \text{ for all } i\}.
-$$
+  Define the **sum** of $$U_1, \dots, U_k$$ to be the set
+
+    $$
+    U_1 + \dots + U_k = \{u_1 + \dots + u_k : u_i \in U_i \text{ for all } i\}.
+    $$
 
 #### Definition (Direct sum)
 
-Let $$V$$ be a vector space and let $$V_1, \dots, V_k$$ be subspaces of $$V$$. We write
+- $$V$$ be a vector space
+  
+- $$V_1, \dots, V_k$$ are subspaces of $$V$$. 
+  
+  We write
 
-$$
-\tag{1}
-V = V_1 \oplus \dots \oplus V_k
-$$
+    $$
+    \tag{1}
+    V = V_1 \oplus \dots \oplus V_k
+    $$
 
-if every vector $$v \in V$$ can be expressed as
+    If every vector $$v \in V$$ can be expressed as
 
-$$
-v = v_1 + \dots + v_k
-$$
+    $$
+    v = v_1 + \dots + v_k
+    $$
 
-**unique vectors** $$v_i \in V_i$$. If $$(1)$$ holds, we say that $$V$$ is the **direct sum** of the subspaces $$V_1, \dots, V_k$$.
+    **unique vectors** $$v_i \in V_i$$. If $$(1)$$ holds, we say that $$V$$ is the **direct sum** of the subspaces $$V_1, \dots, V_k$$.
 
 ##### Remark
 
@@ -77,7 +85,7 @@ For $$2$$ dimensional vector space $$V$$, the following statements are equivalen
 
     which gives two different expressions of $$v$$, a contradiction. Hence, $$V_{1} \cap V_{2}=\{0\}$$.
 
-    - `Second Part`: Also
+    - `Second Part`:
 
     Since $$V = V_1 \oplus V_2$$ which is a special case of sum of subspaces, we have
 
