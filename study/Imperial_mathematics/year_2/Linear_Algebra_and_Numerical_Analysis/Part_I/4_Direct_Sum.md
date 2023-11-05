@@ -14,7 +14,7 @@ $$\gdef\deg{\operatorname{deg}}$$
 $$\gdef\gcd{\operatorname{gcd}}$$
 $$\gdef\abs#1{\left| #1 \right|}$$
 
-> Nowe, we assume that $$V$$ is a vector space over a field $$\F$$.
+> Now, we assume that $$V$$ is a vector space over a field $$\F$$.
 
 #### Definition (Sum of subspaces)
 
