@@ -12,7 +12,7 @@ $$\gdef\F{\mathcal{F}}$$
 $$\gdef\dime{\operatorname{dim}}$$
 $$\gdef\deg{\operatorname{deg}}$$
 $$\gdef\gcd{\operatorname{gcd}}$$
-$$\gdef\abs[#1]{\left\lvert #1 \right\rvert}$$
+$$\gdef\abs#1{\left| #1 \right|}$$
 
 
 
