@@ -9,7 +9,7 @@ $$\gdef\Z{\mathbb{Z}}$$
 $$\gdef\N{\mathbb{N}}$$
 $$\gdef\Q{\mathbb{Q}}$$
 $$\gdef\F{\mathcal{F}}$$
-$$\gdef\dim{\operatorname{dim}}$$
+$$\gdef\dime{\operatorname{dim}}$$
 $$\gdef\deg{\operatorname{deg}}$$
 $$\gdef\gcd{\operatorname{gcd}}$$
 
@@ -30,7 +30,7 @@ where $$\lambda$$ is not a root of $$q(x)$$. We call $$a(\lambda)$$ the **algebr
 The **geometric multiplicity** of $$\lambda$$ is defined to be
 
 $$
-g(\lambda)=\dim E_{\lambda} = \dim \operatorname{Ker}(T - \lambda I)
+g(\lambda)=\dime E_{\lambda} = \dime \operatorname{Ker}(T - \lambda I)
 $$
 
 where $$E_{\lambda}$$ is the $$\lambda$$-eigenspace of $$T$$.
@@ -45,7 +45,7 @@ $$
 
 **Proof**:
 
-Assume $$r = g(\lambda) = \dim E_{\lambda}$$ and $$\{v_1, \cdots, v_r\}$$ be a basis of $$E_{\lambda}$$. We extend this to a basis of $$V$$:
+Assume $$r = g(\lambda) = \dime E_{\lambda}$$ and $$\{v_1, \cdots, v_r\}$$ be a basis of $$E_{\lambda}$$. We extend this to a basis of $$V$$:
 
 $$
 B = \{v_1, \cdots, v_r, w_1,\cdots, w_{s}\}
@@ -104,7 +104,7 @@ $$
         - By definition of diagonalisable, there exists a basis $$B$$ of $$V$$ consisting of eigenvectors of $$T$$. Hence, each vector in $$B$$ is in some eigenspace $$E_{\lambda_i}$$, so
 
             $$
-           \sum_{i = 1}^r \dim E_{\lambda_i} = \sum_{i = 1}^r g(\lambda_i) \leq |B| = n
+           \sum_{i = 1}^r \dime E_{\lambda_i} = \sum_{i = 1}^r g(\lambda_i) \leq |B| = n
             $$
 
         - From the previous proposition, we have $$\sum_{i=1}^r g(\lambda_i) \leq \sum_{i=1}^r a(\lambda_i) = n$$. Hence, we get
@@ -118,7 +118,7 @@ $$
         - By definition of geometric multiplicity, we have
 
             $$
-            \sum_{i = 1}^r g(\lambda_i) = \sum_{i = 1}^r \dim E_{\lambda_i} = n
+            \sum_{i = 1}^r g(\lambda_i) = \sum_{i = 1}^r \dime E_{\lambda_i} = n
             $$
 
         - Let $$B_i$$ be a basis of $$E_{\lambda_i}$$ and define
@@ -127,7 +127,7 @@ $$
             B = \bigcup_{i = 1}^r B_i
             $$
 
-            Then $$B = \sum|B_i| = \sum \dim E_{\lambda_i} = n$$ since $$B_i$$ are disjoint. 
+            Then $$B = \sum|B_i| = \sum \dime E_{\lambda_i} = n$$ since $$B_i$$ are disjoint. 
 
             `Claim`: $$B$$ is a basis of $$V$$.
 
@@ -177,7 +177,7 @@ $$
 
     **If it could not be factorised in $\F$, then $$T$$ is not diagonalisable.**
 
-2. Calculate each $$g\left(\lambda_{i}\right) = \dim E_{\lambda_i}$$.
+2. Calculate each $$g\left(\lambda_{i}\right) = \dime E_{\lambda_i}$$.
 
 3. If $$g(\lambda_i) = a(\lambda_i)$$ for all $$i$$, then $$T$$ is diagonalisable.**$$\surd$$**
 
