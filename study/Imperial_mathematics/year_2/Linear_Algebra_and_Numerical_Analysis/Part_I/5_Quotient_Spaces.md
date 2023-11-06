@@ -94,7 +94,7 @@ for all $$v_1, v_2 , v\in V$$ and $$\lambda \in \F$$.
 
 - `Scalar Multiplication`: $$1(W + v) = 1W + 1v = W + v$$.
 
-- `Scalar Multiplication`: $$0(W + v) = 0W + 0v = W$$.
+- `Scalar Multiplication`: $$0(W + v) = 0W + 0v = W$$. $\square$
 
 > *From now, we will call the quotient set $$V / W$$ as a quotient space of $$V$$ by $$W$$.*
 
@@ -168,7 +168,7 @@ for all $$v_1, v_2 , v\in V$$ and $$\lambda \in \F$$.
 
 - `Conclusion`:
       
-  $$\bar{B}$$ is a basis of $$V / W$$ and $$\di V / W  = \di V - \di W$$.
+  $$\bar{B}$$ is a basis of $$V / W$$ and $$\di V / W  = \di V - \di W$$. $\square$
 
 ### Quotient spaces and linear maps
 
@@ -259,6 +259,8 @@ X & Z \\
 \end{pmatrix}
 $$
 
+where $$Z$$ is a $$r \times s$$ matrix. $\square$
+
 #### Corollary (The characteristic polynomial of $$T$$ could be written as a product of the characteristic polynomials of $$T_w$$ and $$\bar{T}$$)
 
 - $$T: V \rightarrow V$$ is a linear map
@@ -305,3 +307,5 @@ x I_{r}-X & -Z \\
 & =c_{1}(x) c_{2}(x)
 \end{aligned}
 $$
+
+where $$c_1(x)$$ is the characteristic polynomial of $$T_W$$ and $$c_2(x)$$ is the characteristic polynomial of $$\bar{T}$$. $\square$
