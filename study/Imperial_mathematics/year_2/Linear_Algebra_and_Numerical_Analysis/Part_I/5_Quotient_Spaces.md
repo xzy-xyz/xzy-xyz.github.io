@@ -67,7 +67,6 @@ for all $$v_1, v_2 , v\in V$$ and $$\lambda \in \F$$.
 > - The elements of $$V / W$$ are the equivalence classes of the equivalence relation $$\sim$$ on $$V$$ defined by
 >
 >$$v_{1} \sim v_{2} \text { if and only if } v_{1}-v_{2} \in W$$
-> i.e. $$v_1 \sim v_2$$ if and only if $$v_1 - v_2 \in W$$.
 >
 >- `Reflexive`: $$v - v = 0 \in W$$.
 >
