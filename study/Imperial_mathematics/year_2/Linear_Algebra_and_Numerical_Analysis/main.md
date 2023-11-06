@@ -20,7 +20,7 @@ layout: simple
 
 #### *The notes are based on the notes and lectures of [Prof. Martin Liebeck](https://www.ma.ic.ac.uk/~mwl/)*
 
-#### *The notes assume the reader has the knowledge of the first year linear algebra course at Imperial College London.*
+#### *The notes assume the reader had the knowledge of the first year Linear Algebra course at Imperial College London.*
 
 ### Part I: Matrices
 

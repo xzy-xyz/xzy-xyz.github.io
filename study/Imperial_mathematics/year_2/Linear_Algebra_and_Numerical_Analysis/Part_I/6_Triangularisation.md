@@ -24,7 +24,7 @@ $$\gdef\di{\operatorname{dim}}$$
 
 1. Upper triangular matrices are closed under multiplication by a scalar, under sum and under product.
 
-  If
+    If
 
   $$
   A = \begin{pmatrix}
@@ -44,7 +44,7 @@ $$\gdef\di{\operatorname{dim}}$$
   \end{pmatrix}
   $$
 
-  then
+    then
 
   $$
   \beta A = \begin{pmatrix}
@@ -121,7 +121,7 @@ Then, **there is a basis $$B$$ of $$V$$ such that the matrix $$[T]_{B}$$ is uppe
 
   - $$T: V \to V$$ is a linear map
   
-  - $$T(W) \subset W$$
+  - $$T(W) \subseteq W$$
 
   Now, we consider the quotient space $$V / W$$ and the quotient $$\bar{T}: V / W \to V / W$$. 
 
@@ -181,7 +181,8 @@ Then, **$$A$$ is similar to an upper triangular matrix over $$F$$.**
 >
 > - If $$\F = \R$$, some matrices could not be triangularisable. For example, the rotation matrices of $$\R^{2n} n \in \N$$ could not be triangularisable in $$\R$$.
 >
-> $$\begin{pmatrix}
+> $$
+\begin{pmatrix}
  0 & 1\\
   -1 & 0
 \end{pmatrix}
