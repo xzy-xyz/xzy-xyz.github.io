@@ -99,7 +99,7 @@ for all $$v_1, v_2 , v\in V$$ and $$\lambda \in \F$$.
 
 > *From now, we will call the quotient set $$V / W$$ as a quotient space of $$V$$ by $$W$$.*
 
-#### Proposition (The dimension of $$V / W$$)
+#### Proposition (The dimension of $$V / W$$ is $$\di V - \di W$$)
 
 - $$V$$ is a finite-dimensional vector space over $$\F$$
   
@@ -177,7 +177,7 @@ for all $$v_1, v_2 , v\in V$$ and $$\lambda \in \F$$.
 
 - $$W$$ is a subspace of $$V$$
   
-- $$T_w : W \to W$$ is a restriction of $$T: V \to V$$ to $$W$$
+- $$T_w : W \to W$$ is a restriction of $$T$$ to $$W$$
   
   Then we define the **quotient map** $$\bar{T}: V / W \to V / W$$ by
 
@@ -209,7 +209,7 @@ $$
 \bar{B}=\left\{W+v_{1}, \ldots, W+v_{s}\right\}
 $$
 
-#### Proposition (The matrix of $$\bar{T}$$)
+#### Proposition (The matrix $$[T]_B$$ of $$T$$ could be written as a block matrix as $$[T_w]_{B_w}$$ and $$[\bar{T}]_{\bar{B}}$$)
 
 - $$X=\left[T_{W}\right]_{B_{W}}$$(an $$r \times r$$ matrix, which the matrix of the restriction of $$T$$ to $$W$$ $$T_{W}: W \rightarrow W$$)
   
@@ -224,17 +224,20 @@ $$
   \end{pmatrix}
   $$
 
-  where $$Z$$ is $$r \times s$$ matrix.
+  where $$Z$$ is a $$r \times s$$ matrix.
 
 **Proof**:
 
-Let
+Since $$T(W) \subseteq W$$, we can write
 
 $$
-\begin{aligned}
-T(w_i) & = \sum_{j = 1}^r x_{ji} w_j \quad (1 \leq i \leq r) \text{ where } w_j \text{ is the basis of } W \\
-T(v_i) & = \sum_{j = 1}^r z_{ji} w_j + \sum_{k = 1}^s y_{ki} v_k \quad (1 \leq i \leq s) \text{ where } v_k \text{ is the basis of } V
-\end{aligned}
+T(w_i)  = \sum_{j = 1}^r x_{ji} w_j \quad (1 \leq i \leq r) \text{ where } w_j \text{ is the basis of } W 
+$$
+
+which is the matrix $$X = [T_W]_{B_W}$$.
+
+$$
+T(v_i)  = \sum_{j = 1}^r z_{ji} w_j + \sum_{k = 1}^s y_{ki} v_k \quad (1 \leq i \leq s) \text{ where } v_k \text{ is the basis of } V
 $$
 
 Then,
@@ -257,7 +260,7 @@ X & Z \\
 \end{pmatrix}
 $$
 
-#### Corollary (The characteristic polynomial of $$\bar{T}$$)
+#### Corollary (The characteristic polynomial of $$T$$ could be written as a product of the characteristic polynomials of $$T_w$$ and $$\bar{T}$$)
 
 - $$T: V \rightarrow V$$ is a linear map
   
@@ -295,10 +298,10 @@ Hence,
 $$
 \begin{aligned}
 c(x) & =\operatorname{det}(x I-[T]_{B}) \\
-& =\operatorname{det}\left(\begin{pmatrix}
+& =\operatorname{det}\begin{pmatrix}
 x I_{r}-X & -Z \\
 0 & x I_{s}-Y
-\end{pmatrix}\right) \\
+\end{pmatrix} \\
 & =\operatorname{det}(x I_{r}-X) \operatorname{det}(x I_{s}-Y) \\
 & =c_{1}(x) c_{2}(x)
 \end{aligned}
