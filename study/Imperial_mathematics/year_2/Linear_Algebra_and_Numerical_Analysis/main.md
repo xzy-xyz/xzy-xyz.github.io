@@ -11,14 +11,18 @@ layout: simple
 >>
 >><p align="right">-- Prof. Martin Liebeck, first lecture at Autumn Term, 2023</p>
 
-#### *based on the notes and lectures of [Prof. Martin Liebeck](https://www.ma.ic.ac.uk/~mwl/)*
+#### *The notes are based on the notes and lectures of [Prof. Martin Liebeck](https://www.ma.ic.ac.uk/~mwl/)*
+
+#### *The notes assume the reader has the knowledge of the first year linear algebra course at Imperial College London.*
 
 ### Part I: Matrices
 
-- [1. Notations and Course Overview](/study/Imperial_mathematics/year_2/Linear_Algebra_and_Numerical_Analysis/Part_I/1_Notations_and_Course_Overview)
+- [Notations and Course Overview](/study/Imperial_mathematics/year_2/Linear_Algebra_and_Numerical_Analysis/Part_I/1_Notations_and_Course_Overview)
 
-- [2. Some revision from 1st Year Linear Algebra](/study/Imperial_mathematics/year_2/Linear_Algebra_and_Numerical_Analysis/Part_I/2_RevisionofYear1)
+- [Some revision from 1st Year Linear Algebra](/study/Imperial_mathematics/year_2/Linear_Algebra_and_Numerical_Analysis/Part_I/2_RevisionofYear1)
 
-- [3. Algebraic and geometric multiplicaties of eigenvalues](/study/Imperial_mathematics/year_2/Linear_Algebra_and_Numerical_Analysis/Part_I/3_Algebraic_and_geometric_multiplicaties_of_eigenvalues)
+- [Algebraic and geometric multiplicaties of eigenvalues](/study/Imperial_mathematics/year_2/Linear_Algebra_and_Numerical_Analysis/Part_I/3_Algebraic_and_geometric_multiplicaties_of_eigenvalues)
 
-- [4. Direct Sum](/study/Imperial_mathematics/year_2/Linear_Algebra_and_Numerical_Analysis/Part_I/4_Direct_Sum)
+- [Direct Sum](/study/Imperial_mathematics/year_2/Linear_Algebra_and_Numerical_Analysis/Part_I/4_Direct_Sum)
+
+- [Quotient Spaces](/study/Imperial_mathematics/year_2/Linear_Algebra_and_Numerical_Analysis/Part_I/5_Quotient_Spaces)
