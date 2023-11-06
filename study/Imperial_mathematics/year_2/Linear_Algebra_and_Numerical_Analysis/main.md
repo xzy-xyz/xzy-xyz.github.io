@@ -9,9 +9,9 @@ layout: simple
 >
 >> *A big part of linear algebra is concerned with:*
 >>
->> *- Proving the existence of a basis where a linear map can be expressed in its simplest form, and*
+>> *Proving the existence of a basis where a linear map can be expressed in its simplest form, and*
 >>
->> *- Deriving algorithms to find such a basis.*
+>> *Deriving algorithms to find such a basis.*
 >><p align="right">-- Dr Marco Guaraco, the fifth lecture at Autumn Term substitute for Prof. Martin Liebeck, 2023</p>
 >
 >>*$$\exist$$ blackboard page* ....
