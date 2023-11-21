@@ -1,15 +1,15 @@
-title: An Exhibition of A Hunger Artist #Your awesome title
-email: annabellee123456@outlook.com
+title: Chloe-zx #Your awesome title
+email: 1747233637zx@gmail.com
 description: > # this means to ignore newlines until "baseurl"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 
 baseurl:  # the subpath of the site
-url: https://github.com/EinHungerkuenstler/EinHungerkuenstler.github.io # the base hostname & protocol for your site
+url: https://github.com/xzy-xyz/xzy-xyz.github.io # the base hostname & protocol for your site
 
 permalink: /:year-:month/:title
-timezone: GMT+1
+timezone: GMT+8
 
 favicon: /assets/img/favicon.ico
 
@@ -19,10 +19,10 @@ cusdis:
     app_id: #your cusdis app_id
 
 user:
-  name: WHY
+  name: Xiao Zhang
   pic: /assets/img/profile.jpg
-  picAlt: "An Exhibition of A Hunger Artist"
-  job: Muss es sein? Es muss sein!
+  picAlt: "Yuwei Qing"
+  job: student
   aboutme: /aboutme
   aboutthiswebsite: /README
   music: /Pulp_Common_People.mp3
