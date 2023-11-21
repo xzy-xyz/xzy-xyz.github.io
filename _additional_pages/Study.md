@@ -1,5 +1,5 @@
 ---
-title: Hard trip to school
+title: Study
 layout: simple
 order: 2
 ---
