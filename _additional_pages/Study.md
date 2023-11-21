@@ -10,7 +10,7 @@ order: 2
 ><p align="right">-- Hard trip to school </p>
 
 
-### [Some course files](/study/Imperial_mathematics/Imperial_mathematics)
+### [Lecturnotes and homework](/study/Imperial_mathematics/Imperial_mathematics)
 
 
   
