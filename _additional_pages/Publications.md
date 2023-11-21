@@ -1,5 +1,5 @@
 ---
-title: Career
+title: Publications
 layout: simple
 order: 3
 ---
