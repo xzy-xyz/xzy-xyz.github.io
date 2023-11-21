@@ -11,7 +11,7 @@ url: https://github.com/xzy-xyz/xzy-xyz.github.io # the base hostname & protocol
 permalink: /:year-:month/:title
 timezone: GMT+8
 
-favicon: /assets/img/favicon.ico
+favicon: /assets/img/cloud.ico
 
 google_analytics: #UA—XXXXXXXX-X
 disqus_shortname: #disqus shortname
@@ -20,12 +20,11 @@ cusdis:
 
 user:
   name: Xiao Zhang
-  pic: /assets/img/profile.jpg
+  pic: /assets/img/qwq.jpg
   picAlt: "Yuwei Qing"
   job: student
   aboutme: /aboutme
   aboutthiswebsite: /README
-  music: /Pulp_Common_People.mp3
 
 exclude:
   - README.md
