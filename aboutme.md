@@ -16,6 +16,6 @@ yeah！
 
 ### Lab:
 
-[BIRTH lab](https://birthlab.github.io/)
+[BIRTH Lab](https://birthlab.github.io/)
 
-[CANDY lab](https://jechenlab.com/)
+[CANDY Lab](https://jechenlab.com/)
