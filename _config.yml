@@ -26,7 +26,6 @@ user:
   aboutme: /aboutme
 
 exclude:
-  - README.md
   - LICENSE
   - github
 
