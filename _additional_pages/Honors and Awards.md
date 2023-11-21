@@ -1,5 +1,5 @@
 ---
-title: Literature
+title: Honors and Awards
 layout: simple
 order: 5
 ---
