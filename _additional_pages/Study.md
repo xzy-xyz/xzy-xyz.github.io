@@ -3,16 +3,12 @@ title: Study
 layout: simple
 order: 2
 ---
->*"What is the use of a book", thought Alice, "without pictures or conversations?"*
->
-><p align="right">-- Lewis Carroll “Alice in Wonderland"</p>
+>2019~2022 Peking Union Medical College
+>2022~2025 Department of Biomedical Engineering, Tsinghua University
+><p align="right">-- Hard trip to school </p>
 
 
-### [Surviving the mathematics major at Imperial College London](/study/Imperial_mathematics/Imperial_mathematics)
-
-### [Mathematics](/study/Mathematics/main)
-
-### [Computing Skills](/study/Computing_Skills/main)
+### [Some course files](/study/Imperial_mathematics/Imperial_mathematics)
 
 
   
