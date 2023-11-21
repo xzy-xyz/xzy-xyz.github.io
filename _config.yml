@@ -24,7 +24,6 @@ user:
   picAlt: "Yuwei Qing"
   job: student
   aboutme: /aboutme
-  # aboutthiswebsite: /README
 
 exclude:
   - README.md
