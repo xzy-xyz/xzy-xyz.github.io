@@ -23,7 +23,7 @@ user:
   pic: /assets/img/qwq.jpg
   picAlt: "Yuwei Qing"
   job: student
-  aboutme: /aboutme_zx.md
+  aboutme: /aboutme
   # aboutthiswebsite: /README
 
 exclude:
