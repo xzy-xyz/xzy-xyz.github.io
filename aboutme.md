@@ -6,9 +6,10 @@ My academic interest lies in fMRI(functional magnetic resonance imaging), and I 
 
 You can contact me via this email: 1747233637zx@gmail.com
 
-I'll write the rest when I think of it.
+I'll write the rest when I come up with something.
+
 yeah！
 
 <div  align="center"> 
-<img src="/assets/img/hutao.jpg?height=288&width=420&top_left_y=596&top_left_x=1357" style="zoom:55%">
+<img src="/assets/img/hutao.jpg?height=288&width=420&top_left_y=596&top_left_x=1357" style="zoom:20%">
 </div>
