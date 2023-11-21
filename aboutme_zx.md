@@ -10,6 +10,5 @@ I'll write the rest when I think of it.
 yeah！
 
 <div  align="center"> 
-<img src="/assets/img/hutao.JPG?height=288&width=420&top_left_y=596&top_left_x=1357" style="zoom:75%">
+<img src="/assets/img/hutao.jpg>
 </div>
-<center style="font-size:14px;color:#C0C0C0;text-decoration:underline">My self-indentified portrait</center>
