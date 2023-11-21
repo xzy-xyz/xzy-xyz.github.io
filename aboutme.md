@@ -11,5 +11,5 @@ I'll write the rest when I come up with something.
 yeah！
 
 <div  align="center"> 
-<img src="/assets/img/hutao.jpg?height=288&width=420&top_left_y=596&top_left_x=1357" style="zoom:20%">
+<img src="/assets/img/hutao.jpg?height=180&width=220&top_left_y=596&top_left_x=1357" style="zoom:20%">
 </div>
