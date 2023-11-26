@@ -1,6 +1,6 @@
 ---
 layout: simple
-title: lecture notes and homework
+title: lecture note and homework
 ---
 
 > Not ready, but I will gradually upload them.
