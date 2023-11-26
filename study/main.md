@@ -1,6 +1,6 @@
 ---
 layout: simple
-title: Surviving the mathematics major at Imperial College London
+title: lecture notes and homework
 ---
 
 > Not ready, but I will gradually upload them.
