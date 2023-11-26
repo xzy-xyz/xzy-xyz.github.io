@@ -18,4 +18,4 @@ title: Surviving the mathematics major at Imperial College London
 
 ### Year 3
 
-- [Data Structure](/study/year_3/data structure)
+- [Data Structure](/study/year_3/data_structure/main)
