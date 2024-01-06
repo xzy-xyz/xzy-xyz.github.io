@@ -19,3 +19,4 @@ title: lecture note and homework
 ### Year 3
 
 - [Data Structure](/study/year_3/data_structure/main)
+- [Physiological System Simulation and Modeling](https://cloud.tsinghua.edu.cn/d/cfd8a08d399f46e89054/)
