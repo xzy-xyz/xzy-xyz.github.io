@@ -8,9 +8,6 @@ order: 2
 >2022&tilde;2025 [Department of Biomedical Engineering, Tsinghua University](https://bme.med.tsinghua.edu.cn/)
 
 
-### [Lecture note and homework](/study/main)
-
-
   
 
 
